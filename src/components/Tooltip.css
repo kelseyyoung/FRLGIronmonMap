@@ -1,0 +1,18 @@
+.tooltip {
+  position: absolute;
+  background-color: rgba(238, 238, 238, 0.8);
+  padding: 2px;
+  font-size: 8px;
+  z-index: 1000;
+  border-radius: 2px;
+  /* box-shadow: 1px 1px 5px 0px #333; */
+}
+
+.tooltip-beak {
+  position: absolute;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 2px;
+  margin-left: calc(50% - 4px);
+  border-color: rgba(238, 238, 238, 0.8) transparent transparent transparent;
+}

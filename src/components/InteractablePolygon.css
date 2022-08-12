@@ -1,0 +1,13 @@
+.click-zone {
+  cursor: pointer;
+}
+
+.click-zone-polygon {
+  fill: transparent;
+  z-index: 1000;
+}
+
+/* For debugging */
+.click-zone-polygon.selected {
+  stroke: red;
+}

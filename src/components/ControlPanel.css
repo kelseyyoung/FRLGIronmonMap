@@ -1,0 +1,45 @@
+.control-panel {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 10px;
+  left: 10px;
+  min-width: 100px;
+  min-height: 100px;
+  z-index: 1000;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 0px #333;
+}
+
+.control-panel-title,
+.control-panel-subtitle {
+  display: block;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.control-panel-title {
+  font-size: 16px;
+}
+
+.control-panel-subtitle {
+  font-size: 12px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 16px;
+}
+
+.control-panel input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+}
+
+.checkbox-label,
+.item-checkbox-img {
+  margin-left: 2px;
+}
