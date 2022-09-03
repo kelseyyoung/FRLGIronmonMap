@@ -58,6 +58,38 @@ export const convertBoundingBoxToPolygonPoints = (box: BoundingBox) => {
 };
 
 export const trainers: TrainerData[] = [
+  // Viridian Forest
+  {
+    name: "Bug Catcher Rick",
+    numPokemon: 2,
+    x: 828,
+    y: 4247,
+  },
+  {
+    name: "Bug Catcher Doug",
+    numPokemon: 3,
+    x: 825,
+    y: 3989,
+  },
+  {
+    name: "Bug Catcher Anthony",
+    numPokemon: 2,
+    x: 767,
+    y: 3627,
+  },
+  {
+    name: "Bug Catcher Charlie",
+    numPokemon: 3,
+    x: 345,
+    y: 3602,
+  },
+  {
+    name: "Bug Catcher Sammy",
+    numPokemon: 1,
+    x: 193,
+    y: 3884,
+  },
+
   // Route 03/Pre Mt. Moon
   {
     name: "Lass Robin",
@@ -189,5 +221,118 @@ export const trainers: TrainerData[] = [
     numPokemon: 3,
     x: 3441,
     y: 236,
+  },
+
+  // Rt 4/Post Mt Moon
+  // TODO: Lass near Cerulean Cave
+
+  // Rt 24/Nugget Bridge
+  {
+    name: "Bug Catcher Cale",
+    numPokemon: 4,
+    x: 4607,
+    y: 491,
+  },
+  {
+    name: "Lass Ali",
+    numPokemon: 3,
+    x: 4574,
+    y: 444,
+  },
+  {
+    name: "Youngster Timmy",
+    numPokemon: 2,
+    x: 4607,
+    y: 397,
+  },
+  {
+    name: "Lass Reli",
+    numPokemon: 2,
+    x: 4574,
+    y: 347,
+  },
+  {
+    name: "Camper Ethan",
+    numPokemon: 1,
+    x: 4607,
+    y: 299,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    x: 4607,
+    y: 239,
+  },
+  {
+    name: "Camper Shane",
+    numPokemon: 2,
+    x: 4496,
+    y: 332,
+  },
+
+  // Rt 25
+  {
+    name: "Hiker Franklin",
+    numPokemon: 2,
+    x: 4973,
+    y: 63,
+  },
+  {
+    name: "Hiker Wayne",
+    numPokemon: 1,
+    x: 5069,
+    y: 107,
+  },
+  {
+    name: "Youngster Joey",
+    numPokemon: 2,
+    x: 5089,
+    y: 26,
+  },
+  {
+    name: "Youngster Dan",
+    numPokemon: 1,
+    x: 5152,
+    y: 61,
+    spinner: true,
+  },
+  {
+    name: "Picknicker Kelsey",
+    numPokemon: 2,
+    x: 5151,
+    y: 122,
+  },
+  {
+    name: "Hiker Nob",
+    numPokemon: 4,
+    x: 5229,
+    y: 140,
+  },
+  {
+    name: "Camper Flint",
+    numPokemon: 2,
+    x: 5249,
+    y: 59,
+  },
+  {
+    name: "Youngster Chad",
+    numPokemon: 2,
+    x: 5375,
+    y: 75,
+    walker: true,
+  },
+  {
+    name: "Lass Haley",
+    numPokemon: 3,
+    x: 5472,
+    y: 76,
+  },
+
+  // Cerulean City
+  {
+    name: "Rocket Grunt",
+    numPokemon: 2,
+    x: 4759,
+    y: 731,
   },
 ];
