@@ -976,6 +976,179 @@ export const items: ItemData[] = [
     spawnInfo: "20% chance to spawn",
   },
 
+  // Sliph Co
+  // 2F
+  {
+    x: 3207,
+    y: 4734,
+    type: ItemType.Hidden,
+  },
+
+  // 3F
+  {
+    x: 4183,
+    y: 4686,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3766,
+    y: 4555,
+    type: ItemType.Normal,
+  },
+
+  // 4F
+  {
+    x: 3590,
+    y: 4351,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3511,
+    y: 4320,
+    type: ItemType.TM,
+  },
+  {
+    x: 3063,
+    y: 4236,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3080,
+    y: 4205,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3095,
+    y: 4222,
+    type: ItemType.Normal,
+  },
+
+  // 5F
+  {
+    x: 4151,
+    y: 4173,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3848,
+    y: 4287,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3703,
+    y: 4173,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4006,
+    y: 4366,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3654,
+    y: 4318,
+    type: ItemType.TM,
+  },
+
+  // 6F
+  {
+    x: 3127,
+    y: 3839,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3143,
+    y: 3933,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3128,
+    y: 3981,
+    type: ItemType.Normal,
+  },
+
+  // 7F
+  {
+    x: 4118,
+    y: 3884,
+    type: ItemType.TM,
+  },
+  {
+    x: 3991,
+    y: 3886,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3640,
+    y: 3899,
+    type: ItemType.Normal,
+  },
+
+  // 8F
+  {
+    x: 4103,
+    y: 3552,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4023,
+    y: 3519,
+    type: ItemType.Normal,
+  },
+
+  // 9F
+  {
+    x: 3815,
+    y: 3296,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3719,
+    y: 3200,
+    type: ItemType.Hidden,
+  },
+
+  // 10F
+  {
+    x: 4007,
+    y: 2900,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3944,
+    y: 2994,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3912,
+    y: 3026,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3895,
+    y: 2994,
+    type: ItemType.Normal,
+  },
+
+  // 11F
+  {
+    x: 4022,
+    y: 2705,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4119,
+    y: 2701,
+    type: ItemType.Normal,
+  },
+
+  // Saffron City
+  {
+    x: 4417,
+    y: 2035,
+    type: ItemType.Hidden,
+  },
+
   // Rt 22
   {
     x: 50,

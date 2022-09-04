@@ -1638,6 +1638,219 @@ export const trainers: TrainerData[] = [
     y: 4890,
   },
 
+  // Sliph Co
+  // 2F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3495,
+    y: 4579,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3350,
+    y: 4621,
+  },
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 3479,
+    y: 4676,
+  },
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 3110,
+    y: 4691,
+  },
+
+  // 3F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 4039,
+    y: 4530,
+  },
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 3702,
+    y: 4595,
+  },
+
+  // 4F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3559,
+    y: 4279,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3190,
+    y: 4319,
+  },
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 3253,
+    y: 4149,
+  },
+
+  // 5F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 4198,
+    y: 4129,
+  },
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 3814,
+    y: 4104,
+  },
+  {
+    name: "Juggler",
+    numPokemon: 1,
+    x: 4005,
+    y: 4230,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3782,
+    y: 4358,
+  },
+
+  // 6F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3448,
+    y: 3787,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3397,
+    y: 3974,
+  },
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 3255,
+    y: 3878,
+  },
+
+  // 7F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 4023,
+    y: 3781,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3845,
+    y: 3760,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 4022,
+    y: 3943,
+  },
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 3671,
+    y: 3910,
+  },
+  {
+    name: "Rival",
+    numPokemon: 6,
+    x: 3670,
+    y: 3805,
+  },
+
+  // 8F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 4085,
+    y: 3465,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3799,
+    y: 3655,
+  },
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 3783,
+    y: 3448,
+  },
+
+  // 9F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3879,
+    y: 3354,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3654,
+    y: 3155,
+  },
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 4054,
+    y: 3332,
+  },
+
+  // 10F
+  {
+    name: "Scientist",
+    numPokemon: 1,
+    x: 3894,
+    y: 2843,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3862,
+    y: 2955,
+  },
+
+  // 11F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 3894,
+    y: 2713,
+  },
+  {
+    name: "Giovanni",
+    numPokemon: 6,
+    x: 3958,
+    y: 2597,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    x: 4118,
+    y: 2597,
+  },
+
   // Victory Road
   // 1F
   {
