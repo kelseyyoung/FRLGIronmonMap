@@ -130,4 +130,68 @@ export const items: ItemData[] = [
     y: 240,
     type: ItemType.Normal,
   },
+
+  // Rt4/Post Mt. Moon
+  {
+    x: 3184,
+    y: 832,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3570,
+    y: 1073,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3568,
+    y: 885,
+    type: ItemType.TM,
+  },
+
+  // Cerulean City
+  {
+    x: 4511,
+    y: 756,
+    type: ItemType.Hidden,
+  },
+
+  // Rt24/25
+  {
+    x: 4722,
+    y: 64,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5026,
+    y: 33,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5233,
+    y: 33,
+    type: ItemType.TM,
+  },
+  {
+    x: 5330,
+    y: 130,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5443,
+    y: 48,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5730,
+    y: 94,
+    type: ItemType.Hidden,
+  },
+
+  // Vertical Underground Pass
+  {
+    x: 2560,
+    y: 421,
+    type: ItemType.Hidden,
+    spawnInfo: "10% chance to spawn",
+  },
 ];
