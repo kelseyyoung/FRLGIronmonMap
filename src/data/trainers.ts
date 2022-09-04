@@ -455,6 +455,7 @@ export const trainers: TrainerData[] = [
     numPokemon: 2,
     x: 5264,
     y: 4183,
+    // TODO: battle on enter
   },
   {
     name: "Youngster Tyler",
@@ -467,10 +468,12 @@ export const trainers: TrainerData[] = [
     numPokemon: 2,
     x: 5135,
     y: 4165,
+    spinner: true,
   },
 
   // Lower Floor
   {
+    // TODO: Duncan and Leonard might be flipped
     name: "Sailor Duncan",
     numPokemon: 3,
     x: 5708,
@@ -481,18 +484,21 @@ export const trainers: TrainerData[] = [
     numPokemon: 1,
     x: 5687,
     y: 4138,
+    spinner: true,
   },
   {
     name: "Sailor Dylan",
     numPokemon: 3,
     x: 5647,
     y: 4117,
+    // TODO: battle on enter
   },
   {
     name: "Sailor Huey",
     numPokemon: 2,
     x: 5570,
     y: 4121,
+    spinner: true,
   },
   {
     name: "Sailor Phillip",
@@ -508,43 +514,521 @@ export const trainers: TrainerData[] = [
   },
 
   // Deck
-  // TODO: stopped here
   {
     name: "Sailor Edmond",
     numPokemon: 2,
-    x: 5375,
-    y: 4160,
+    x: 4800,
+    y: 4000,
   },
   {
     name: "Sailor Trevor",
     numPokemon: 2,
-    x: 5375,
-    y: 4160,
+    x: 4709,
+    y: 3979,
+    walker: true,
   },
 
   // Upper Level
   {
     name: "Fisherman Dale",
     numPokemon: 3,
-    x: 5375,
-    y: 4160,
+    x: 5174,
+    y: 3766,
   },
   {
     name: "Gentleman Brooks",
     numPokemon: 1,
-    x: 5375,
-    y: 4160,
+    x: 5136,
+    y: 3746,
   },
   {
     name: "Lass Dawn",
     numPokemon: 2,
-    x: 5375,
-    y: 4160,
+    x: 5282,
+    y: 3717,
   },
   {
     name: "Gentleman Lamar",
     numPokemon: 2,
-    x: 5375,
-    y: 4160,
+    x: 5256,
+    y: 3760,
   },
+  {
+    name: "Rival",
+    numPokemon: 4,
+    x: 5471,
+    y: 3723,
+  },
+
+  // Rt9/Pre Rock Tunnel
+  {
+    name: "Picknicker Alicia",
+    numPokemon: 4,
+    x: 5218,
+    y: 954,
+  },
+  {
+    name: "Hiker Jeremy",
+    numPokemon: 2,
+    x: 5311,
+    y: 1068,
+    spinner: true,
+  },
+  {
+    name: "Camper Chris",
+    numPokemon: 2,
+    x: 5410,
+    y: 909,
+    spinner: true,
+  },
+  {
+    name: "Bug Catcher Brent",
+    numPokemon: 2,
+    x: 5399,
+    y: 814,
+  },
+  {
+    name: "Bug Catcher Conner",
+    numPokemon: 3,
+    x: 5776,
+    y: 908,
+  },
+  {
+    name: "Hiker Alan",
+    numPokemon: 2,
+    x: 5809,
+    y: 830,
+    walker: true,
+  },
+  {
+    name: "Picknicker Caitlin",
+    numPokemon: 1,
+    x: 5956,
+    y: 939,
+  },
+  {
+    name: "Camper Drew",
+    numPokemon: 3,
+    x: 5568,
+    y: 891,
+  },
+  {
+    name: "Hiker Brice",
+    numPokemon: 3,
+    x: 5971,
+    y: 1050,
+  },
+  {
+    name: "Picknicker Heidi",
+    numPokemon: 2,
+    x: 6291,
+    y: 1228,
+  },
+
+  // Rock Tunnel
+  // 1F
+  {
+    name: "Pokémaniac Ashton",
+    numPokemon: 2,
+    x: 6467,
+    y: 305,
+  },
+  {
+    name: "Hiker Lenny",
+    numPokemon: 4,
+    x: 6145,
+    y: 228,
+  },
+  {
+    name: "Hiker Oliver",
+    numPokemon: 3,
+    x: 6117,
+    y: 468,
+  },
+  {
+    name: "Hiker Lucas",
+    numPokemon: 2,
+    x: 6355,
+    y: 422,
+  },
+  {
+    name: "Picknicker Leah",
+    numPokemon: 2,
+    x: 6756,
+    y: 534,
+  },
+  {
+    name: "Picknicker Ariana",
+    numPokemon: 4,
+    x: 6659,
+    y: 582,
+  },
+  {
+    name: "Picknicker Dana",
+    numPokemon: 3,
+    x: 6452,
+    y: 595,
+  },
+
+  // B1
+  {
+    name: "Pokémaniac Winston",
+    numPokemon: 1,
+    x: 7276,
+    y: 707,
+  },
+  {
+    name: "Picknicker Martha",
+    numPokemon: 2,
+    x: 7051,
+    y: 674,
+  },
+  {
+    name: "Pokémaniac Steve",
+    numPokemon: 2,
+    x: 7180,
+    y: 516,
+  },
+  {
+    name: "Hiker Allen",
+    numPokemon: 1,
+    x: 7392,
+    y: 324,
+  },
+  {
+    name: "Hiker Eric",
+    numPokemon: 2,
+    x: 7468,
+    y: 228,
+  },
+  {
+    name: "Picknicker Heidi",
+    numPokemon: 3,
+    x: 6992,
+    y: 389,
+  },
+  {
+    name: "Hiker Dudley",
+    numPokemon: 3,
+    x: 6896,
+    y: 319,
+  },
+  {
+    name: "Pokémaniac Cooper",
+    numPokemon: 3,
+    x: 6848,
+    y: 247,
+    spinner: true,
+  },
+
+  // Rt10
+  {
+    name: "Picknicker Carol",
+    numPokemon: 2,
+    x: 6256,
+    y: 1764,
+    spinner: true,
+  },
+  {
+    name: "Hiker Clark",
+    numPokemon: 2,
+    x: 6211,
+    y: 1788,
+    spinner: true,
+  },
+  {
+    name: "Hiker Trent",
+    numPokemon: 2,
+    x: 6209,
+    y: 1884,
+  },
+  {
+    name: "Pokémaniac Herman",
+    numPokemon: 2,
+    x: 6389,
+    y: 1922,
+    walker: true,
+  },
+
+  // Rt 8
+  {
+    name: "Lass Julia",
+    numPokemon: 2,
+    x: 5982,
+    y: 2301,
+  },
+  {
+    name: "Gamer Rich",
+    numPokemon: 2,
+    x: 5868,
+    y: 2317,
+  },
+  {
+    name: "Super Nerd Glenn",
+    numPokemon: 3,
+    x: 5808,
+    y: 2171,
+    spinner: true,
+  },
+  {
+    name: "Twins Eli Anne",
+    numPokemon: 2,
+    x: 5585,
+    y: 2130,
+    // TODO: double
+  },
+  {
+    name: "Super Nerd Leslie",
+    numPokemon: 1,
+    x: 5434,
+    y: 2141,
+  },
+  {
+    name: "Lass Megan",
+    numPokemon: 5,
+    x: 5434,
+    y: 2123,
+  },
+  {
+    name: "Lass Paige",
+    numPokemon: 2,
+    x: 5434,
+    y: 2161,
+  },
+  {
+    name: "Lass Andrea",
+    numPokemon: 3,
+    x: 5434,
+    y: 2178,
+  },
+  {
+    name: "Biker Jaren",
+    numPokemon: 2,
+    x: 5458,
+    y: 2281,
+    walker: true,
+  },
+  {
+    name: "Biker Ricardo",
+    numPokemon: 3,
+    x: 5276,
+    y: 2326,
+    walker: true,
+  },
+  {
+    name: "Gamer Stan",
+    numPokemon: 3,
+    x: 5326,
+    y: 2128,
+  },
+  {
+    name: "Super Nerd Aidan",
+    numPokemon: 4,
+    x: 5135,
+    y: 2174,
+  },
+
+  // Rocket Hideout
+  // B1
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    x: 2566,
+    y: 2716,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    x: 2887,
+    y: 2765,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    x: 2598,
+    y: 3085,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    x: 2663,
+    y: 2924,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    x: 2837,
+    y: 3005,
+    spinner: true,
+  },
+
+  // B2
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 5,
+    x: 2830,
+    y: 3234,
+    spinner: true,
+  },
+
+  // B3
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    x: 3277,
+    y: 2717,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    x: 3004,
+    y: 2893,
+  },
+
+  // B4
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    x: 3093,
+    y: 3059,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    x: 3285,
+    y: 3253,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 4,
+    x: 3334,
+    y: 3254,
+  },
+  {
+    name: "Giovanni",
+    numPokemon: 4,
+    x: 3333,
+    y: 3095,
+  },
+
+  // Pokemon Tower
+  // 1F
+  {
+    name: "Rival",
+    numPokemon: 4,
+    x: 6775,
+    y: 2793,
+  },
+
+  // 3F
+  {
+    name: "Channeler Patricia",
+    numPokemon: 1,
+    x: 6664,
+    y: 2563,
+  },
+  {
+    name: "Channeler Carly",
+    numPokemon: 1,
+    x: 6679,
+    y: 2641,
+  },
+  {
+    name: "Channeler Hope",
+    numPokemon: 1,
+    x: 6711,
+    y: 2481,
+    spinner: true,
+  },
+
+  // 4F
+  {
+    name: "Channeler Laurel",
+    numPokemon: 2,
+    x: 6792,
+    y: 2240,
+  },
+  {
+    name: "Channeler Jody",
+    numPokemon: 1,
+    x: 6758,
+    y: 2338,
+  },
+  {
+    name: "Channeler Paula",
+    numPokemon: 1,
+    x: 6583,
+    y: 2325,
+  },
+
+  // 5F
+  {
+    name: "Channeler Janae",
+    numPokemon: 1,
+    x: 6822,
+    y: 1953,
+  },
+  {
+    name: "Channeler Karina",
+    numPokemon: 1,
+    x: 6631,
+    y: 2036,
+  },
+  {
+    name: "Channeler Tammy",
+    numPokemon: 1,
+    x: 6694,
+    y: 2097,
+    spinner: true,
+  },
+  // TODO: Missing a channeler here
+  {
+    name: "Channeler",
+    numPokemon: 1,
+    x: 6694,
+    y: 1906,
+    spinner: true,
+  },
+
+  // 6F
+  {
+    name: "Channeler Angelica",
+    numPokemon: 3,
+    x: 6727,
+    y: 1715,
+  },
+  {
+    name: "Channeler Jennifer",
+    numPokemon: 1,
+    x: 6806,
+    y: 1651,
+  },
+  {
+    name: "Channeler Emilia",
+    numPokemon: 1,
+    x: 6663,
+    y: 1650,
+  },
+
+  // 7F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    x: 6662,
+    y: 1429,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    x: 6728,
+    y: 1396,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 4,
+    x: 6662,
+    y: 1363,
+  },
+
+  // Rt12/To Fuschia
 ];
