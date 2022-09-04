@@ -631,4 +631,447 @@ export const items: ItemData[] = [
     y: 1801,
     type: ItemType.Normal,
   },
+
+  // Rt12/To Fuschia
+  {
+    x: 6433,
+    y: 2980,
+    type: ItemType.TM,
+  },
+  {
+    x: 6434,
+    y: 3319,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 6290,
+    y: 4021,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6291,
+    y: 4259,
+    type: ItemType.Hidden,
+  },
+
+  // Rt13
+  {
+    x: 5746,
+    y: 4548,
+    type: ItemType.Hidden,
+  },
+
+  // Rt14
+  {
+    x: 5299,
+    y: 5171,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5138,
+    y: 4643,
+    type: ItemType.Hidden,
+  },
+
+  // Rt15
+  {
+    x: 4163,
+    y: 5061,
+    type: ItemType.TM,
+  },
+
+  // Fuschia City
+  {
+    x: 3602,
+    y: 5221,
+    type: ItemType.Hidden,
+  },
+
+  // Safari Zone
+  // Entry
+  {
+    x: 6242,
+    y: 5764,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6297,
+    y: 5764,
+    type: ItemType.Hidden,
+  },
+
+  // Right
+  {
+    x: 7306,
+    y: 5583,
+    type: ItemType.Normal,
+  },
+  {
+    x: 7228,
+    y: 5599,
+    type: ItemType.TM,
+  },
+  {
+    x: 6941,
+    y: 5500,
+    type: ItemType.Normal,
+  },
+  {
+    x: 7321,
+    y: 5552,
+    type: ItemType.Normal,
+  },
+
+  // Up
+  {
+    x: 6268,
+    y: 5132,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6256,
+    y: 5010,
+    type: ItemType.TM,
+  },
+  {
+    x: 6334,
+    y: 4942,
+    type: ItemType.Normal,
+  },
+
+  // Left
+  {
+    x: 5485,
+    y: 5561,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5469,
+    y: 5715,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5295,
+    y: 5765,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5309,
+    y: 5546,
+    type: ItemType.TM,
+  },
+  {
+    x: 5251,
+    y: 5506,
+    type: ItemType.Hidden,
+  },
+
+  // Cycling Road
+  {
+    x: 2337,
+    y: 4912,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2177,
+    y: 4404,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2402,
+    y: 3730,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2178,
+    y: 3491,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2270,
+    y: 3252,
+    type: ItemType.Hidden,
+  },
+
+  // Power Plant
+  {
+    x: 5432,
+    y: 1680,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5738,
+    y: 1598,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6057,
+    y: 1838,
+    type: ItemType.TM,
+  },
+  {
+    x: 5962,
+    y: 1599,
+    type: ItemType.TM,
+  },
+  {
+    x: 6043,
+    y: 1312,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5787,
+    y: 1505,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5449,
+    y: 1442,
+    type: ItemType.Hidden,
+  },
+
+  // Seafoam Islands
+  // 1F
+  {
+    x: 3840,
+    y: 5760,
+    type: ItemType.Normal,
+  },
+
+  // B1
+  {
+    x: 4547,
+    y: 5909,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5839,
+    y: 5760,
+    type: ItemType.Normal,
+  },
+
+  // B2
+  {
+    x: 3934,
+    y: 6246,
+    type: ItemType.Normal,
+  },
+
+  // B3
+  {
+    x: 4347,
+    y: 6199,
+    type: ItemType.Hidden,
+  },
+
+  // B4
+  {
+    x: 5230,
+    y: 6326,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5084,
+    y: 6151,
+    type: ItemType.Hidden,
+  },
+
+  // Rt20
+  {
+    x: 1711,
+    y: 6177,
+    type: ItemType.Hidden,
+    spawnInfo: "20% chance to spawn",
+  },
+
+  // Pokemon Mansion
+  // 1F
+  {
+    x: 1385,
+    y: 5852,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 1706,
+    y: 5613,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1780,
+    y: 5752,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1813,
+    y: 6029,
+    type: ItemType.Normal,
+  },
+
+  // 2F
+  {
+    x: 1647,
+    y: 5270,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1923,
+    y: 5017,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1915,
+    y: 5157,
+    type: ItemType.Normal,
+  },
+
+  // 3F
+  {
+    x: 2119,
+    y: 5915,
+    type: ItemType.Normal,
+  },
+  {
+    x: 2489,
+    y: 5696,
+    type: ItemType.Normal,
+  },
+  {
+    x: 2550,
+    y: 5807,
+    type: ItemType.Hidden,
+  },
+
+  // 1B
+  {
+    x: 2622,
+    y: 5966,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3147,
+    y: 5576,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2949,
+    y: 5567,
+    type: ItemType.TM,
+  },
+  {
+    x: 2670,
+    y: 5619,
+    type: ItemType.Normal,
+  },
+  {
+    x: 2678,
+    y: 5818,
+    type: ItemType.TM,
+  },
+
+  // Rt 21
+  {
+    x: 1236,
+    y: 5156,
+    type: ItemType.Hidden,
+    spawnInfo: "20% chance to spawn",
+  },
+
+  // Rt 22
+  {
+    x: 50,
+    y: 2529,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 176,
+    y: 2100,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 320,
+    y: 1635,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 162,
+    y: 1554,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 304,
+    y: 1154,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 34,
+    y: 947,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 48,
+    y: 770,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 146,
+    y: 610,
+    type: ItemType.Hidden,
+  },
+
+  // Victory Road
+  // 1F
+  {
+    x: 585,
+    y: 594,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 584,
+    y: 451,
+    type: ItemType.Normal,
+  },
+  {
+    x: 617,
+    y: 418,
+    type: ItemType.TM,
+  },
+  {
+    x: 647,
+    y: 417,
+    type: ItemType.Hidden,
+  },
+
+  // 2F
+  {
+    x: 1015,
+    y: 413,
+    type: ItemType.TM,
+  },
+  {
+    x: 1058,
+    y: 293,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1191,
+    y: 417,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1433,
+    y: 318,
+    type: ItemType.TM,
+  },
+
+  // 3F
+  {
+    x: 982,
+    y: 700,
+    type: ItemType.TM,
+  },
+  {
+    x: 1400,
+    y: 668,
+    type: ItemType.Normal,
+  },
 ];

@@ -4,6 +4,7 @@ export interface TrainerData {
   // points: string; // "points" attr for the <polygon> element
   name: string; // name of the trainer
   numPokemon: number; // number of pokemon this trainer has
+  pokemonLevels?: number[]; // Array of levels for the pokemon this trainer has
   walker?: boolean; // T/F if the trainer walks around
   spinner?: boolean; // T/F if the trainer is a stationary spinner
 }
@@ -1030,5 +1031,691 @@ export const trainers: TrainerData[] = [
     y: 1363,
   },
 
-  // Rt12/To Fuschia
+  // Rt12
+  {
+    name: "Fisherman Ned",
+    numPokemon: 3,
+    x: 6417,
+    y: 2907,
+    spinner: true,
+  },
+  {
+    name: "Fisherman Chip",
+    numPokemon: 2,
+    x: 6289,
+    y: 3037,
+    spinner: true,
+  },
+  {
+    // TODO: no name
+    name: "Fisherman",
+    numPokemon: 1,
+    x: 6400,
+    y: 3148,
+    spinner: true,
+  },
+  {
+    name: "Fisherman Elliot",
+    numPokemon: 4,
+    x: 6353,
+    y: 3340,
+    spinner: true,
+  },
+  {
+    name: "Young Couple Gia & Jes",
+    numPokemon: 2,
+    x: 6450,
+    y: 3402,
+  },
+  {
+    name: "Rocker Luca",
+    numPokemon: 2,
+    x: 6288,
+    y: 3841,
+    walker: true,
+  },
+  {
+    name: "Camper Justin",
+    numPokemon: 2,
+    x: 6304,
+    y: 3979,
+  },
+  {
+    name: "Fisherman Andrew",
+    numPokemon: 2,
+    x: 6432,
+    y: 4122,
+    spinner: true,
+  },
+
+  // Rt13
+  {
+    name: "Picknicker Alma",
+    numPokemon: 3,
+    x: 6366,
+    y: 4405,
+    walker: true,
+  },
+  {
+    name: "Birdkeeper Sebastian",
+    numPokemon: 2,
+    x: 6385,
+    y: 4492,
+    walker: true,
+  },
+  {
+    name: "Picknicker Susie",
+    numPokemon: 5,
+    x: 6230,
+    y: 4490,
+    walker: true,
+  },
+  {
+    name: "Beauty Lola",
+    numPokemon: 3,
+    x: 6068,
+    y: 4426,
+  },
+  {
+    name: "Beauty Sheila",
+    numPokemon: 2,
+    x: 6048,
+    y: 4426,
+  },
+  {
+    name: "Picknicker Valerie",
+    numPokemon: 2,
+    x: 5936,
+    y: 4474,
+  },
+  {
+    name: "Picknicker Gwen",
+    numPokemon: 3,
+    x: 5840,
+    y: 4492,
+  },
+  {
+    name: "Birdkeeper Robert",
+    numPokemon: 4,
+    x: 5521,
+    y: 4540,
+  },
+  {
+    name: "Birdkeeper Perry",
+    numPokemon: 4,
+    x: 5633,
+    y: 4398,
+  },
+  {
+    name: "Biker Jared",
+    numPokemon: 3,
+    x: 5600,
+    y: 4441,
+    spinner: true,
+  },
+
+  // Rt14
+  {
+    name: "Birdkeeper Mitch",
+    numPokemon: 4,
+    x: 5104,
+    y: 4411,
+  },
+  {
+    name: "Birdkeeper Carter",
+    numPokemon: 3,
+    x: 5123,
+    y: 4460,
+    walker: true,
+  },
+  {
+    name: "Birdkeeper Beck",
+    numPokemon: 2,
+    x: 5153,
+    y: 4539,
+  },
+  {
+    name: "Birdkeeper Marlon",
+    numPokemon: 3,
+    x: 5248,
+    y: 4575,
+  },
+  {
+    name: "Birdkeeper Donald",
+    numPokemon: 1,
+    x: 5279,
+    y: 4872,
+    walker: true,
+  },
+  {
+    name: "Birdkeeper Benny",
+    numPokemon: 2,
+    x: 5279,
+    y: 5070,
+    walker: true,
+  },
+  {
+    name: "Twins Kiri & Jan",
+    numPokemon: 2,
+    x: 5187,
+    y: 5135,
+  },
+  {
+    name: "Biker Gerald",
+    numPokemon: 2,
+    x: 5104,
+    y: 4904,
+  },
+  {
+    name: "Biker Malik",
+    numPokemon: 2,
+    x: 5104,
+    y: 4857,
+  },
+  {
+    name: "Biker Lukas",
+    numPokemon: 4,
+    x: 5104,
+    y: 4807,
+  },
+  {
+    name: "Biker Isaac",
+    numPokemon: 3,
+    x: 5153,
+    y: 4844,
+    walker: true,
+  },
+
+  // Rt15
+  {
+    name: "Picknicker Becky",
+    numPokemon: 2,
+    x: 4672,
+    y: 5076,
+    walker: true,
+  },
+  {
+    name: "Crush Kin Ron & Mya",
+    numPokemon: 2,
+    x: 4461,
+    y: 5067,
+  },
+  {
+    name: "Picknicker Celia",
+    numPokemon: 1,
+    x: 4288,
+    y: 5066,
+    walker: true,
+  },
+  {
+    name: "Biker Ernest",
+    numPokemon: 5,
+    x: 4847,
+    y: 5160,
+    spinner: true,
+  },
+  {
+    name: "Biker Alex",
+    numPokemon: 3,
+    x: 4785,
+    y: 5147,
+    spinner: true,
+  },
+  {
+    name: "Beauty Grace",
+    numPokemon: 2,
+    x: 4705,
+    y: 5150,
+  },
+  {
+    name: "Beauty Olivia",
+    numPokemon: 2,
+    x: 4640,
+    y: 5150,
+  },
+  {
+    name: "Picknicker Kindra",
+    numPokemon: 3,
+    x: 4540,
+    y: 5126,
+    walker: true,
+  },
+  {
+    name: "Birdkeeper Chester",
+    numPokemon: 3,
+    x: 4433,
+    y: 5174,
+  },
+  {
+    name: "Birdkeeper Edwin",
+    numPokemon: 4,
+    x: 4272,
+    y: 5149,
+  },
+  {
+    name: "Picknicker Yazmin",
+    numPokemon: 3,
+    x: 4177,
+    y: 5163,
+    walker: true,
+  },
+
+  // Fuschia City
+  {
+    name: "Birdkeeper Jacob",
+    numPokemon: 4,
+    x: 2849,
+    y: 5178,
+  },
+  {
+    name: "Birdkeeper Ramiro",
+    numPokemon: 1,
+    x: 2768,
+    y: 5195,
+    spinner: true,
+  },
+  {
+    name: "Birdkeeper Wilton",
+    numPokemon: 2,
+    x: 2736,
+    y: 5149,
+  },
+
+  // Cycling Road
+  {
+    name: "Biker William",
+    numPokemon: 5,
+    x: 2298,
+    y: 4559,
+    walker: true,
+  },
+
+  // TODO: rest of bikers
+
+  // Top 6 trainers
+  {
+    name: "Cue Ball Camron",
+    numPokemon: 2,
+    x: 2208,
+    y: 2302,
+    spinner: true,
+  },
+  {
+    name: "Biker Ruben",
+    numPokemon: 3,
+    x: 2240,
+    y: 2273,
+    spinner: true,
+  },
+  {
+    name: "Biker Hideo",
+    numPokemon: 1,
+    x: 2269,
+    y: 2302,
+    spinner: true,
+  },
+  {
+    name: "Cue Ball Luke",
+    numPokemon: 2,
+    x: 2305,
+    y: 2273,
+    spinner: true,
+  },
+  {
+    // TODO: no name
+    name: "Cue Ball",
+    numPokemon: 3,
+    x: 2334,
+    y: 2302,
+    spinner: true,
+  },
+  {
+    name: "Biker Lao",
+    numPokemon: 2,
+    x: 2364,
+    y: 2273,
+    spinner: true,
+  },
+  {
+    name: "Young Couple Lea & Jed",
+    numPokemon: 2,
+    x: 2593,
+    y: 2157,
+  },
+
+  // Rt19
+  {
+    name: "Swimmer Richard",
+    numPokemon: 2,
+    x: 3424,
+    y: 5580,
+  },
+  {
+    name: "Swimmer Reece",
+    numPokemon: 3,
+    x: 3503,
+    y: 5598,
+  },
+  {
+    name: "Swimmer Tony",
+    numPokemon: 2,
+    x: 3455,
+    y: 5712,
+    spinner: true,
+  },
+  {
+    name: "Swimmer David",
+    numPokemon: 3,
+    x: 3511,
+    y: 5791,
+    spinner: true,
+  },
+  {
+    name: "Swimmer Douglas",
+    numPokemon: 4,
+    x: 3382,
+    y: 5841,
+    walker: true,
+  },
+  {
+    name: "Swimmer Matthew",
+    numPokemon: 2,
+    x: 3514,
+    y: 5919,
+    walker: true,
+  },
+  {
+    name: "Sis and Bro Lia & Luc",
+    numPokemon: 2,
+    x: 3392,
+    y: 6095,
+  },
+  {
+    name: "Swimmer Axle",
+    numPokemon: 5,
+    x: 3440,
+    y: 6191,
+    spinner: true,
+  },
+  {
+    name: "Swimmer Connie",
+    numPokemon: 3,
+    x: 3409,
+    y: 6210,
+    spinner: true,
+  },
+  {
+    name: "Swimmer Anya",
+    numPokemon: 5,
+    x: 3489,
+    y: 6209,
+    spinner: true,
+  },
+  {
+    name: "Swimmer Alice",
+    numPokemon: 2,
+    x: 3457,
+    y: 6226,
+    spinner: true,
+  },
+  {
+    name: "Swimmer Barry",
+    numPokemon: 2,
+    x: 3090,
+    y: 6177,
+    walker: true,
+  },
+  {
+    name: "Swimmer Darrin",
+    numPokemon: 4,
+    x: 3024,
+    y: 6303,
+    walker: true,
+  },
+  {
+    name: "Swimmer Shirley",
+    numPokemon: 3,
+    x: 2832,
+    y: 6238,
+    spinner: true,
+  },
+
+  // Seafoam Islands
+  // TODO: swimmer, name and num pokemon
+  {
+    name: "Swimmer",
+    numPokemon: 3,
+    x: 2208,
+    y: 6255,
+    spinner: true,
+  },
+  {
+    name: "Picknicker Irene",
+    numPokemon: 3,
+    x: 2832,
+    y: 6238,
+  },
+
+  // Rt 20
+  {
+    name: "Birdkeeper Roger",
+    numPokemon: 3,
+    x: 2024,
+    y: 6207,
+    walker: true,
+  },
+  {
+    name: "Swimmer Nora",
+    numPokemon: 3,
+    x: 1889,
+    y: 6191,
+  },
+  {
+    name: "Swimmer Dean",
+    numPokemon: 1,
+    x: 1728,
+    y: 6304,
+    walker: true,
+  },
+  {
+    name: "Picknicker Missy",
+    numPokemon: 2,
+    x: 1600,
+    y: 6301,
+  },
+  {
+    name: "Swimmer Melissa",
+    numPokemon: 2,
+    x: 1471,
+    y: 6254,
+    spinner: true,
+  },
+
+  // Pokemon Mansion
+  // 1F
+  {
+    name: "Youngster Johnson",
+    numPokemon: 3,
+    x: 1512,
+    y: 5635,
+  },
+  {
+    name: "Scientist Ted",
+    numPokemon: 2,
+    x: 1706,
+    y: 5895,
+  },
+
+  // 2F
+  {
+    name: "Burglar Lewis",
+    numPokemon: 2,
+    x: 1431,
+    y: 5250,
+  },
+
+  // 3F
+  {
+    name: "Scientist Ivan",
+    numPokemon: 2,
+    x: 2324,
+    y: 5801,
+  },
+  {
+    name: "Burglar Arnie",
+    numPokemon: 2,
+    x: 2096,
+    y: 5786,
+  },
+
+  // 1B
+  {
+    name: "Scientist Braydon",
+    numPokemon: 3,
+    x: 3132,
+    y: 5695,
+  },
+  {
+    name: "Burglar Simon",
+    numPokemon: 1,
+    x: 2892,
+    y: 5898,
+  },
+
+  // Rt 21
+  {
+    name: "Swimmer Jerome",
+    numPokemon: 2,
+    x: 1201,
+    y: 5886,
+  },
+  {
+    name: "Swimmer Roland",
+    numPokemon: 3,
+    x: 1105,
+    y: 5729,
+  },
+  {
+    name: "Swimmer Jack",
+    numPokemon: 1,
+    x: 1199,
+    y: 5658,
+  },
+  {
+    name: "Fisherman Nolan",
+    numPokemon: 2,
+    x: 1185,
+    y: 5517,
+  },
+  {
+    name: "Fisherman Claude",
+    numPokemon: 2,
+    x: 1135,
+    y: 5403,
+  },
+  {
+    name: "Swimmer Spencer",
+    numPokemon: 2,
+    x: 1111,
+    y: 5152,
+  },
+  {
+    name: "Sis and Bro Lil & Ian",
+    numPokemon: 2,
+    x: 1184,
+    y: 5039,
+  },
+  {
+    name: "Fisherman Wade",
+    numPokemon: 5,
+    x: 1071,
+    y: 4908,
+  },
+  {
+    name: "Fisherman Ronald",
+    numPokemon: 4,
+    x: 1216,
+    y: 4890,
+  },
+
+  // Victory Road
+  // 1F
+  {
+    name: "Cool Trainer Naomi",
+    numPokemon: 5,
+    x: 616,
+    y: 495,
+  },
+  {
+    name: "Cool Trainer Rolando",
+    numPokemon: 5,
+    x: 472,
+    y: 428,
+  },
+
+  // 2F
+  {
+    name: "Black Belt Daisuke",
+    numPokemon: 3,
+    x: 1115,
+    y: 375,
+    spinner: true,
+  },
+  {
+    name: "Juggler Nelson",
+    numPokemon: 4,
+    x: 1289,
+    y: 455,
+  },
+  {
+    name: "Tamer Vincent",
+    numPokemon: 2,
+    x: 1208,
+    y: 334,
+    walker: true,
+  },
+  {
+    name: "Juggler Gregory",
+    numPokemon: 1,
+    x: 1366,
+    y: 277,
+  },
+  {
+    name: "Pokémaniac Dawson",
+    numPokemon: 3,
+    x: 902,
+    y: 261,
+  },
+
+  // 3F
+  {
+    name: "Cool Trainer George",
+    numPokemon: 4,
+    x: 1429,
+    y: 663,
+  },
+  {
+    name: "Cool Trainer Alexa",
+    numPokemon: 5,
+    x: 1127,
+    y: 632,
+  },
+  {
+    name: "Cool Trainer Caroline",
+    numPokemon: 5,
+    x: 969,
+    y: 805,
+  },
+  {
+    name: "Cool Trainer Colby",
+    numPokemon: 5,
+    x: 956,
+    y: 821,
+  },
+  {
+    name: "Cool Couple Ray & Tyra",
+    numPokemon: 2,
+    x: 1398,
+    y: 757,
+  },
 ];
