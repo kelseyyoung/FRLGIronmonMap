@@ -1,5 +1,6 @@
 import React from "react";
 import * as ReactDOM from "react-dom";
+import { DEBUG_MODE } from "../FRLGIronmonMap";
 import "./Tooltip.css";
 
 export interface TooltipProps {
@@ -43,6 +44,11 @@ export const Tooltip = (props: TooltipProps) => {
       ref={tooltipContainerRef}
       className="tooltip"
     >
+      {DEBUG_MODE && (
+        <span>
+          X: {x}, Y: {y}
+        </span>
+      )}
       {children}
       <div className="tooltip-beak"></div>
     </div>,

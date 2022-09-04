@@ -5,6 +5,8 @@ import { MapInteractionCSS } from "react-map-interaction";
 import { ControlPanel, Trainer, Item } from "./components";
 import { ItemData, items, ItemType, trainers } from "./data";
 
+export const DEBUG_MODE = false;
+
 export const FRLGIronmonMap = () => {
   const [showTrainerData, setShowTrainerData] = React.useState(false);
   const [showItemData, setShowItemData] = React.useState(false);

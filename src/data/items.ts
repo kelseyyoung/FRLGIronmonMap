@@ -15,6 +15,38 @@ export const defaultItemHeight = 12;
 export const defaultItemWidth = 12;
 
 export const items: ItemData[] = [
+  // Viridian Forest
+  {
+    x: 534,
+    y: 4445,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 160,
+    y: 4194,
+    type: ItemType.Normal,
+  },
+  {
+    x: 866,
+    y: 4499,
+    type: ItemType.Normal,
+  },
+  {
+    x: 722,
+    y: 3874,
+    type: ItemType.Normal,
+  },
+  {
+    x: 415,
+    y: 4081,
+    type: ItemType.Normal,
+  },
+  {
+    x: 129,
+    y: 3890,
+    type: ItemType.Hidden,
+  },
+
   // Route 03/Pre Mt. Moon
   {
     x: 1953,
@@ -157,6 +189,11 @@ export const items: ItemData[] = [
 
   // Rt24/25
   {
+    x: 4593,
+    y: 69,
+    type: ItemType.Normal,
+  },
+  {
     x: 4722,
     y: 64,
     type: ItemType.Hidden,
@@ -251,7 +288,6 @@ export const items: ItemData[] = [
   },
 
   // Rt 11
-  // TODO: missing an item here in the grass
   {
     x: 5204,
     y: 3409,
@@ -266,6 +302,11 @@ export const items: ItemData[] = [
     x: 5921,
     y: 3442,
     type: ItemType.Hidden,
+  },
+  {
+    x: 5666,
+    y: 3554,
+    type: ItemType.Normal,
   },
 
   // S.S. Anne
@@ -339,7 +380,7 @@ export const items: ItemData[] = [
     type: ItemType.Hidden,
   },
   {
-    x: 5239,
+    x: 5182,
     y: 1075,
     type: ItemType.TM,
   },
@@ -354,7 +395,7 @@ export const items: ItemData[] = [
     type: ItemType.Hidden,
   },
   {
-    x: 6014,
+    x: 6031,
     y: 1075,
     type: ItemType.Normal,
   },
@@ -498,7 +539,7 @@ export const items: ItemData[] = [
   },
   {
     x: 2519,
-    y: 2947,
+    y: 2933,
     type: ItemType.Normal,
   },
   {
@@ -564,7 +605,7 @@ export const items: ItemData[] = [
   },
   {
     x: 3048,
-    y: 3148,
+    y: 3132,
     type: ItemType.TM,
   },
   {
