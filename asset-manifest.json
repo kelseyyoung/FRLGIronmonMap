@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/FRLGIronmonMap/static/css/main.6dfa6093.css",
-    "main.js": "/FRLGIronmonMap/static/js/main.39b7c113.js",
-    "static/media/FullKanto.png": "/FRLGIronmonMap/static/media/FullKanto.bb56f7222f5386a3419f.png",
+    "main.js": "/FRLGIronmonMap/static/js/main.7a944bfc.js",
+    "static/media/FullKanto.png": "/FRLGIronmonMap/static/media/FullKanto.4eaf6c402279d74d95a1.png",
     "static/media/pokeball.png": "/FRLGIronmonMap/static/media/pokeball.a423f307223251ab7bff.png",
     "static/media/star.png": "/FRLGIronmonMap/static/media/star.8ee1f0879d78a0f695bf.png",
     "static/media/checkmark.png": "/FRLGIronmonMap/static/media/checkmark.d3a535b4929ab14365bf.png",
     "index.html": "/FRLGIronmonMap/index.html",
     "main.6dfa6093.css.map": "/FRLGIronmonMap/static/css/main.6dfa6093.css.map",
-    "main.39b7c113.js.map": "/FRLGIronmonMap/static/js/main.39b7c113.js.map"
+    "main.7a944bfc.js.map": "/FRLGIronmonMap/static/js/main.7a944bfc.js.map"
   },
   "entrypoints": [
     "static/css/main.6dfa6093.css",
-    "static/js/main.39b7c113.js"
+    "static/js/main.7a944bfc.js"
   ]
 }
