@@ -3,6 +3,7 @@ import "./ControlPanel.css";
 import PokeBall from "../assets/PokeballItem.png";
 import TMItem from "../assets/TMItem.png";
 import HiddenItem from "../assets/HiddenItem.png";
+import { Dialog, DialogTitle, Icon } from "@mui/material";
 
 export type CheckboxClickedCallback = (newVal: boolean) => void;
 
@@ -38,6 +39,11 @@ export const ControlPanel = (props: ControlPanelProps) => {
   const [highlightTMs, setHighlightTMs] = React.useState(false);
   const [highlightHidden, setHighlightHidden] = React.useState(false);
 
+  const [collapsed, setCollapsed] = React.useState(false);
+
+  const [helpDialogOpen, setHelpDialogOpen] = React.useState(false);
+  const [infoDialogOpen, setInfoDialogOpen] = React.useState(false);
+
   React.useEffect(() => {
     onShowTrainerDataClicked?.(showTrainerData);
   }, [onShowTrainerDataClicked, showTrainerData]);
@@ -59,53 +65,106 @@ export const ControlPanel = (props: ControlPanelProps) => {
   }, [onHighlightHiddenClicked, highlightHidden]);
 
   return (
-    <div className="control-panel">
-      <span className="control-panel-title">Control Panel</span>
-      <div className="control-panel-subtitle">Trainer/Item Info</div>
-      <div className="checkbox-group">
-        <input
-          type="checkbox"
-          checked={showTrainerData}
-          onChange={invertValueHandler(setShowTrainerData)}
-        />
-        <label className="checkbox-label">Show Trainer Data</label>
+    <>
+      <div className={`control-panel ${collapsed ? "collapsed" : ""}`}>
+        <div className="control-panel-title">
+          <span>Control Panel</span>
+          <button
+            type="button"
+            className="collapse-button"
+            onClick={() => setCollapsed((collapsed) => !collapsed)}
+          >
+            <Icon fontSize="small">{collapsed ? "add" : "remove"}</Icon>
+          </button>
+        </div>
+        <div className="control-panel-subtitle">Trainer/Item Info</div>
+        <div className="checkbox-group">
+          <input
+            type="checkbox"
+            checked={showTrainerData}
+            onChange={invertValueHandler(setShowTrainerData)}
+          />
+          <label className="checkbox-label">Show Trainer Data</label>
+        </div>
+        <div className="checkbox-group">
+          <input
+            type="checkbox"
+            checked={showItemData}
+            onChange={invertValueHandler(setShowItemData)}
+          />
+          <label className="checkbox-label">Show Item Data</label>
+        </div>
+        <div className="control-panel-subtitle">Highlight Items</div>
+        <div className="checkbox-group">
+          <input
+            type="checkbox"
+            checked={highlightItems}
+            onChange={invertValueHandler(setHighlightItems)}
+          />
+          <img className="item-checkbox-img" src={PokeBall} />
+          <label className="checkbox-label">Regular</label>
+        </div>
+        <div className="checkbox-group">
+          <input
+            type="checkbox"
+            checked={highlightTMs}
+            onChange={invertValueHandler(setHighlightTMs)}
+          />
+          <img className="item-checkbox-img" src={TMItem} />
+          <label className="checkbox-label">TMs</label>
+        </div>
+        <div className="checkbox-group">
+          <input
+            type="checkbox"
+            checked={highlightHidden}
+            onChange={invertValueHandler(setHighlightHidden)}
+          />
+          <img className="item-checkbox-img" src={HiddenItem} />
+          <label className="checkbox-label">Hidden</label>
+        </div>
+        <hr />
+        <div className="buttons-container">
+          <button
+            type="button"
+            className="control-panel-button"
+            onClick={() => setInfoDialogOpen(true)}
+          >
+            <Icon fontSize="small">info</Icon>
+          </button>
+          <button
+            type="button"
+            className="control-panel-button"
+            onClick={() => setHelpDialogOpen(true)}
+          >
+            <Icon fontSize="small">help</Icon>
+          </button>
+        </div>
       </div>
-      <div className="checkbox-group">
-        <input
-          type="checkbox"
-          checked={showItemData}
-          onChange={invertValueHandler(setShowItemData)}
-        />
-        <label className="checkbox-label">Show Item Data</label>
-      </div>
-      <div className="control-panel-subtitle">Highlight Items</div>
-      <div className="checkbox-group">
-        <input
-          type="checkbox"
-          checked={highlightItems}
-          onChange={invertValueHandler(setHighlightItems)}
-        />
-        <img className="item-checkbox-img" src={PokeBall} />
-        <label className="checkbox-label">Regular</label>
-      </div>
-      <div className="checkbox-group">
-        <input
-          type="checkbox"
-          checked={highlightTMs}
-          onChange={invertValueHandler(setHighlightTMs)}
-        />
-        <img className="item-checkbox-img" src={TMItem} />
-        <label className="checkbox-label">TMs</label>
-      </div>
-      <div className="checkbox-group">
-        <input
-          type="checkbox"
-          checked={highlightHidden}
-          onChange={invertValueHandler(setHighlightHidden)}
-        />
-        <img className="item-checkbox-img" src={HiddenItem} />
-        <label className="checkbox-label">Hidden</label>
-      </div>
-    </div>
+      <Dialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)}>
+        <DialogTitle>About</DialogTitle>
+        <div className="dialog-text">
+          More information about this map can be found on the{" "}
+          <a
+            href="https://github.com/kelseyyoung/FRLGIronmonMap"
+            target="_blank"
+          >
+            Github README
+          </a>
+        </div>
+      </Dialog>
+      <Dialog open={helpDialogOpen} onClose={() => setHelpDialogOpen(false)}>
+        <DialogTitle>Help</DialogTitle>
+        <div className="dialog-text">
+          Found an issue? File an issue on{" "}
+          <a
+            href="https://github.com/kelseyyoung/FRLGIronmonMap/issues"
+            target="_blank"
+          >
+            Github
+          </a>{" "}
+          or contact me on Discord (kelsey#8920)
+        </div>
+      </Dialog>
+    </>
   );
 };

@@ -1,14 +1,25 @@
 .control-panel {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   top: 10px;
   left: 10px;
+  height: auto;
+  max-height: 500px;
   min-width: 100px;
-  min-height: 100px;
   z-index: 1000;
   padding: 5px;
   border-radius: 4px;
   box-shadow: 1px 1px 5px 0px #333;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}
+
+.control-panel:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.control-panel.collapsed {
+  max-height: 28px;
 }
 
 .control-panel-title,
@@ -20,6 +31,9 @@
 
 .control-panel-title {
   font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .control-panel-subtitle {
@@ -42,4 +56,58 @@
 .checkbox-label,
 .item-checkbox-img {
   margin-left: 2px;
+}
+
+.control-panel .buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-panel-button {
+  height: 26px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  cursor: pointer;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.control-panel-button:hover {
+  background-color: #ddd;
+}
+
+.control-panel-button:active {
+  background-color: #ccc;
+}
+
+.collapse-button {
+  background-color: transparent;
+  border-color: transparent;
+  height: 20px;
+  width: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.5;
+  border-radius: 2px;
+}
+
+.collapse-button:hover {
+  background-color: #ccc;
+}
+
+.collapse-button:active {
+  background-color: #aaa;
+}
+
+.dialog-text {
+  padding: 10px 24px;
+  margin-bottom: 10px;
 }

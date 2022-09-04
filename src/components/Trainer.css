@@ -1,6 +1,7 @@
 .trainer-name {
   font-weight: bold;
   margin-bottom: 1px;
+  text-align: center;
 }
 
 .trainer-info {
@@ -8,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  column-gap: 8px;
 }
 
 .trainer-info-section {

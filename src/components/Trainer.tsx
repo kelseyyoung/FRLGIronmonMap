@@ -18,7 +18,16 @@ export interface TrainerProps extends TrainerData {
 }
 
 export const Trainer = (props: TrainerProps) => {
-  const { name, numPokemon, x, y, showTooltip, walker, spinner } = props;
+  const {
+    name,
+    numPokemon,
+    x,
+    y,
+    showTooltip,
+    walker,
+    spinner,
+    pokemonLevels,
+  } = props;
   const marks = React.useRef<EntityMarkIcon[]>([
     "none",
     "checked",
@@ -32,6 +41,13 @@ export const Trainer = (props: TrainerProps) => {
 
   const { shouldShowTooltip, showTooltipOnHover, hideTooltipOnHover } =
     useHoverableTooltip(showTooltip);
+
+  const formattedPokemonLevels = React.useMemo(() => {
+    if (!pokemonLevels) {
+      return "";
+    }
+    return [...new Set(pokemonLevels)].join(",");
+  }, [pokemonLevels]);
 
   return (
     <>
@@ -58,6 +74,11 @@ export const Trainer = (props: TrainerProps) => {
             <img className="trainer-info-icon" src={PokeBall} />
             {numPokemon}
           </span>
+          {formattedPokemonLevels && (
+            <span className="trainer-info-section">
+              {formattedPokemonLevels}
+            </span>
+          )}
           {spinner && (
             <span className="trainer-info-section">
               <img className="trainer-info-icon" src={Spinner} />

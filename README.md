@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+# Pokemon FireRed/LeafGreen Ironmon Map
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://kelseyyoung.github.io/FRLGIronmonMap
 
-## Available Scripts
+This is an interactive map of Pokemon FireRed/LeafGreen meant for Ironmon challenge runners. For information on what Ironmon is, [join the discord](https://discord.gg/QEEsmNUX)
 
-In the project directory, you can run:
+## Using the map
 
-### `yarn start`
+Clicking and dragging moves the map, right click also works. Zoom in and out with the scroll wheel
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Hovering over a trainer shows information about them, clicking on a trainer cycles through different "marks". Items can also be marked, if hidden items have a certain spawn rate that information is also available on hover
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Developers
 
-### `yarn test`
+1. Clone the repo
+2. Run `yarn` to install dependencies
+3. Run `yarn start` to start a local dev server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Found an issue? Want to suggest a feature?
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+File an issue on [Github](https://github.com/kelseyyoung/FRLGIronmonMap/issues) or contact me on Discord (kelsey#8920)

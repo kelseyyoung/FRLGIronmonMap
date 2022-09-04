@@ -889,7 +889,7 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
   {
-    name: "Twins Eli Anne",
+    name: "Twins Eli & Anne",
     numPokemon: 2,
     pokemonLevels: [0],
     x: 5585,
