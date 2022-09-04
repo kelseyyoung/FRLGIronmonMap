@@ -335,4 +335,216 @@ export const trainers: TrainerData[] = [
     x: 4759,
     y: 731,
   },
+
+  // Rt 6
+  {
+    name: "Bug Catcher Keigo",
+    numPokemon: 3,
+    x: 4464,
+    y: 2813,
+  },
+  {
+    name: "Camper Ricky",
+    numPokemon: 1,
+    x: 4609,
+    y: 2892,
+  },
+  {
+    name: "Picknicker Nancy",
+    numPokemon: 2,
+    x: 4625,
+    y: 2892,
+  },
+  {
+    name: "Bug Catcher Elijah",
+    numPokemon: 1,
+    x: 4736,
+    y: 2956,
+  },
+  {
+    name: "Picknicker Isabelle",
+    numPokemon: 3,
+    x: 4625,
+    y: 3068,
+  },
+  {
+    name: "Camper Jeff",
+    numPokemon: 2,
+    x: 4625,
+    y: 3086,
+  },
+
+  // Rt 11
+  {
+    name: "Youngster Eddie",
+    numPokemon: 1,
+    x: 5298,
+    y: 3484,
+  },
+  {
+    name: "Gamer Hugo",
+    numPokemon: 2,
+    x: 5249,
+    y: 3630,
+  },
+  {
+    name: "Youngster Dave",
+    numPokemon: 2,
+    x: 5441,
+    y: 3548,
+    walker: true,
+  },
+  {
+    name: "Youngster Dillon",
+    numPokemon: 2,
+    x: 5485,
+    y: 3487,
+    spinner: true,
+  },
+  {
+    name: "Engineer Bernie",
+    numPokemon: 3,
+    x: 5505,
+    y: 3643,
+  },
+  {
+    name: "Gamer Jasper",
+    numPokemon: 2,
+    x: 5600,
+    y: 3596,
+  },
+  {
+    name: "Gamer Darian",
+    numPokemon: 2,
+    x: 5793,
+    y: 3420,
+    spinner: true,
+  },
+  {
+    name: "Engineer Braxton",
+    numPokemon: 2,
+    x: 5666,
+    y: 3485,
+  },
+  {
+    name: "Youngster Yasu",
+    numPokemon: 3,
+    x: 5793,
+    y: 3547,
+    walker: true,
+  },
+  {
+    name: "Gamer Dirk",
+    numPokemon: 2,
+    x: 5905,
+    y: 3614,
+    spinner: true,
+  },
+
+  // S.S. Anne
+  // Main Floor
+  {
+    // TODO: what is this dude's name
+    name: "Gentleman",
+    numPokemon: 2,
+    x: 5376,
+    y: 4160,
+  },
+  {
+    name: "Gentleman Arthur",
+    numPokemon: 2,
+    x: 5264,
+    y: 4183,
+  },
+  {
+    name: "Youngster Tyler",
+    numPokemon: 1,
+    x: 5106,
+    y: 4188,
+  },
+  {
+    name: "Lass Ann",
+    numPokemon: 2,
+    x: 5135,
+    y: 4165,
+  },
+
+  // Lower Floor
+  {
+    name: "Sailor Duncan",
+    numPokemon: 3,
+    x: 5708,
+    y: 4096,
+  },
+  {
+    name: "Sailor Leonard",
+    numPokemon: 1,
+    x: 5687,
+    y: 4138,
+  },
+  {
+    name: "Sailor Dylan",
+    numPokemon: 3,
+    x: 5647,
+    y: 4117,
+  },
+  {
+    name: "Sailor Huey",
+    numPokemon: 2,
+    x: 5570,
+    y: 4121,
+  },
+  {
+    name: "Sailor Phillip",
+    numPokemon: 1,
+    x: 5510,
+    y: 4083,
+  },
+  {
+    name: "Fisherman Barny",
+    numPokemon: 3,
+    x: 5541,
+    y: 4083,
+  },
+
+  // Deck
+  // TODO: stopped here
+  {
+    name: "Sailor Edmond",
+    numPokemon: 2,
+    x: 5375,
+    y: 4160,
+  },
+  {
+    name: "Sailor Trevor",
+    numPokemon: 2,
+    x: 5375,
+    y: 4160,
+  },
+
+  // Upper Level
+  {
+    name: "Fisherman Dale",
+    numPokemon: 3,
+    x: 5375,
+    y: 4160,
+  },
+  {
+    name: "Gentleman Brooks",
+    numPokemon: 1,
+    x: 5375,
+    y: 4160,
+  },
+  {
+    name: "Lass Dawn",
+    numPokemon: 2,
+    x: 5375,
+    y: 4160,
+  },
+  {
+    name: "Gentleman Lamar",
+    numPokemon: 2,
+    x: 5375,
+    y: 4160,
+  },
 ];

@@ -188,10 +188,50 @@ export const items: ItemData[] = [
   },
 
   // Vertical Underground Pass
+  // TODO:
   {
     x: 2560,
     y: 421,
     type: ItemType.Hidden,
     spawnInfo: "10% chance to spawn",
   },
+
+  // Rt 6
+  {
+    x: 4495,
+    y: 2641,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4722,
+    y: 2641,
+    type: ItemType.Hidden,
+  },
+
+  // Vermillion City
+  {
+    x: 4448,
+    y: 3380,
+    type: ItemType.Hidden,
+  },
+
+  // Rt 11
+  // TODO: missing an item here in the grass
+  {
+    x: 5204,
+    y: 3409,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6000,
+    y: 3568,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5921,
+    y: 3442,
+    type: ItemType.Hidden,
+  },
+
+  // S.S. Anne
 ];
