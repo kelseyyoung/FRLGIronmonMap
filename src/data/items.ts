@@ -47,6 +47,30 @@ export const items: ItemData[] = [
     type: ItemType.Hidden,
   },
 
+  // Viridian City
+  {
+    x: 1233,
+    y: 2479,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1236,
+    y: 2627,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1052,
+    y: 2962,
+    type: ItemType.Normal,
+  },
+
+  // Pewter City
+  {
+    x: 864,
+    y: 1009,
+    type: ItemType.Hidden,
+  },
+
   // Route 03/Pre Mt. Moon
   {
     x: 1953,
@@ -835,6 +859,15 @@ export const items: ItemData[] = [
   },
 
   // Power Plant
+
+  // Outside
+  {
+    x: 6339,
+    y: 1447,
+    type: ItemType.Hidden,
+  },
+
+  // Inside
   {
     x: 5432,
     y: 1680,

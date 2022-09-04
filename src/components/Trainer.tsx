@@ -7,6 +7,7 @@ import "./Trainer.css";
 import PokeBall from "../assets/pokeball.png";
 import Spinner from "../assets/spinner.png";
 import Walking from "../assets/walking.png";
+import Levels from "../assets/levels.png";
 import { Tooltip } from "./Tooltip";
 import { useEntityMark, useHoverableTooltip } from "../hooks";
 import { InteractablePolygon } from "./InteractablePolygon";
@@ -43,8 +44,8 @@ export const Trainer = (props: TrainerProps) => {
     useHoverableTooltip(showTooltip);
 
   const formattedPokemonLevels = React.useMemo(() => {
-    if (!pokemonLevels) {
-      return "";
+    if (pokemonLevels.length === 0 || pokemonLevels[0] === 0) {
+      return "?";
     }
     return [...new Set(pokemonLevels)].join(",");
   }, [pokemonLevels]);
@@ -76,6 +77,7 @@ export const Trainer = (props: TrainerProps) => {
           </span>
           {formattedPokemonLevels && (
             <span className="trainer-info-section">
+              <img className="trainer-info-icon" src={Levels} />
               {formattedPokemonLevels}
             </span>
           )}
