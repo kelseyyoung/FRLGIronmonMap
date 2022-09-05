@@ -37,7 +37,7 @@ export const InteractablePolygon = (props: InteractablePolygonProps) => {
       onMouseLeave={onMouseLeave}
     >
       <polygon
-        className={`click-zone-polygon ${polygonClassNames}`}
+        className={`click-zone-polygon ${polygonClassNames || ""}`}
         points={convertBoundingBoxToPolygonPoints(boundingBox)}
       />
       {children}

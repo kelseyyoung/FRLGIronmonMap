@@ -33,6 +33,8 @@ export const FRLGIronmonMap = () => {
   const [highlightHidden, setHighlightHidden] = React.useState(false);
   const [showMapPortals, setShowMapPortals] = React.useState(false);
   const [showMapPortalLines, setShowMapPortalLines] = React.useState(false);
+  const [showMapPortalLinesHover, setShowMapPortalLinesHover] =
+    React.useState(false);
 
   const [value, setValue] = React.useState<MapInteractionCSSValue>({
     scale: 1,
@@ -78,6 +80,7 @@ export const FRLGIronmonMap = () => {
         onHighlightHiddenClicked={setHighlightHidden}
         onShowMapPortalsClicked={setShowMapPortals}
         onShowMapPortalLinesClicked={setShowMapPortalLines}
+        onShowMapPortalLinesHoverClicked={setShowMapPortalLinesHover}
       />
       <MapInteractionCSS
         value={value}
@@ -127,6 +130,7 @@ export const FRLGIronmonMap = () => {
                 color={portalGroup.color}
                 show={showMapPortals}
                 showLines={showMapPortalLines}
+                showLinesOnHover={showMapPortalLinesHover}
                 {...portal}
               />
             ));

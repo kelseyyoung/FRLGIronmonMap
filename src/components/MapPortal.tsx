@@ -11,6 +11,7 @@ export interface MapPortalProps extends MapPortalData {
   color: string;
   show?: boolean;
   showLines?: boolean;
+  showLinesOnHover?: boolean;
 }
 
 export const MapPortal = (props: MapPortalProps) => {
@@ -23,6 +24,7 @@ export const MapPortal = (props: MapPortalProps) => {
     color,
     show,
     showLines,
+    showLinesOnHover,
   } = props;
 
   const [hovered, setHovered] = React.useState(false);
@@ -87,7 +89,7 @@ export const MapPortal = (props: MapPortalProps) => {
           />
         </>
       )}
-      {showLines && (
+      {(showLines || (showLinesOnHover && hovered)) && (
         <line
           className={`map-portal-line ${hovered ? "hovered" : ""}`}
           x1={portal1.x + 10}
