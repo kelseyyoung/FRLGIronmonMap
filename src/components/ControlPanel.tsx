@@ -13,6 +13,8 @@ export interface ControlPanelProps {
   onHighlightItemsClicked?: CheckboxClickedCallback;
   onHighlightTMsClicked?: CheckboxClickedCallback;
   onHighlightHiddenClicked?: CheckboxClickedCallback;
+  onShowMapPortalsClicked?: CheckboxClickedCallback;
+  onShowMapPortalLinesClicked?: CheckboxClickedCallback;
 }
 
 // TODO: perhaps useMemo this inside ControlPanel
@@ -31,6 +33,8 @@ export const ControlPanel = (props: ControlPanelProps) => {
     onHighlightItemsClicked,
     onHighlightTMsClicked,
     onHighlightHiddenClicked,
+    onShowMapPortalsClicked,
+    onShowMapPortalLinesClicked,
   } = props;
 
   const [showTrainerData, setShowTrainerData] = React.useState(false);
@@ -38,6 +42,8 @@ export const ControlPanel = (props: ControlPanelProps) => {
   const [highlightItems, setHighlightItems] = React.useState(false);
   const [highlightTMs, setHighlightTMs] = React.useState(false);
   const [highlightHidden, setHighlightHidden] = React.useState(false);
+  const [showMapPortals, setShowMapPortals] = React.useState(false);
+  const [showMapPortalLines, setShowMapPortalLines] = React.useState(false);
 
   const [collapsed, setCollapsed] = React.useState(false);
 
@@ -63,6 +69,14 @@ export const ControlPanel = (props: ControlPanelProps) => {
   React.useEffect(() => {
     onHighlightHiddenClicked?.(highlightHidden);
   }, [onHighlightHiddenClicked, highlightHidden]);
+
+  React.useEffect(() => {
+    onShowMapPortalsClicked?.(showMapPortals);
+  }, [onShowMapPortalsClicked, showMapPortals]);
+
+  React.useEffect(() => {
+    onShowMapPortalLinesClicked?.(showMapPortalLines);
+  }, [onShowMapPortalLinesClicked, showMapPortalLines]);
 
   return (
     <>
@@ -121,6 +135,23 @@ export const ControlPanel = (props: ControlPanelProps) => {
           />
           <img className="item-checkbox-img" src={HiddenItem} />
           <label className="checkbox-label">Hidden</label>
+        </div>
+        <div className="control-panel-subtitle">Map Portals</div>
+        <div className="checkbox-group">
+          <input
+            type="checkbox"
+            checked={showMapPortals}
+            onChange={invertValueHandler(setShowMapPortals)}
+          />
+          <label className="checkbox-label">Show Map Portals</label>
+        </div>
+        <div className="checkbox-group">
+          <input
+            type="checkbox"
+            checked={showMapPortalLines}
+            onChange={invertValueHandler(setShowMapPortalLines)}
+          />
+          <label className="checkbox-label">Show Map Portal Lines</label>
         </div>
         <hr />
         <div className="buttons-container">

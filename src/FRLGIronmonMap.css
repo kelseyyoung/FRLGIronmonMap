@@ -3,7 +3,8 @@
   width: 100%;
 }
 
-#tooltip-container {
+#tooltip-container,
+#portal-label-container {
   position: absolute;
   top: 0;
   left: 0;
