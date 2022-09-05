@@ -10,11 +10,9 @@ import { useEntityMark, useHoverableTooltip } from "../hooks";
 import { InteractablePolygon } from "./InteractablePolygon";
 import React from "react";
 import { EntityMarkIcon } from "./EntityMark";
+import { useAppSelector } from "../state";
 
-export interface ItemProps extends ItemData {
-  showTooltip?: boolean;
-  highlight?: boolean;
-}
+export interface ItemProps extends ItemData {}
 
 // TODO: Memoize?
 const convertItemTypeToClassName = (itemType: ItemType) => {
@@ -31,13 +29,31 @@ const convertItemTypeToClassName = (itemType: ItemType) => {
 };
 
 export const Item = (props: ItemProps) => {
-  const { x, y, showTooltip, spawnInfo, highlight, type } = props;
+  const { x, y, spawnInfo, type } = props;
   const marks = React.useRef<EntityMarkIcon[]>([
     "none",
     "checked",
     "crossed",
     "starred",
   ]);
+
+  const {
+    showItemData: showTooltip,
+    highlightItems,
+    highlightHiddenItems,
+    highlightTMs,
+  } = useAppSelector((state) => state.settings);
+
+  const highlight = React.useMemo(() => {
+    if (type === ItemType.Normal && highlightItems) {
+      return true;
+    } else if (type === ItemType.TM && highlightTMs) {
+      return true;
+    } else if (type === ItemType.Hidden && highlightHiddenItems) {
+      return true;
+    }
+    return false;
+  }, [type, highlightItems, highlightTMs, highlightHiddenItems]);
 
   const { currentMark, incrementMark, EntityMark } = useEntityMark(
     marks.current

@@ -3,41 +3,44 @@ import { InteractablePolygon } from "./InteractablePolygon";
 import React from "react";
 import { PortalLabel } from "./PortalLabel";
 import "./MapPortal.css";
+import { MapPortalLinesType, useAppSelector } from "../state";
 
 export interface MapPortalProps extends MapPortalData {
   offsetMapCoords: (x: number, y: number) => void;
   index: number;
   scale: number;
   color: string;
-  show?: boolean;
-  showLines?: boolean;
-  showLinesOnHover?: boolean;
 }
 
 export const MapPortal = (props: MapPortalProps) => {
+  const { portal1, portal2, scale, offsetMapCoords, index, color } = props;
+
   const {
-    portal1,
-    portal2,
-    scale,
-    offsetMapCoords,
-    index,
-    color,
-    show,
-    showLines,
-    showLinesOnHover,
-  } = props;
+    showMapPortals: show,
+    showMapPortalLines,
+    showMapPortalLinesType,
+  } = useAppSelector((state) => state.settings);
 
   const [hovered, setHovered] = React.useState(false);
 
+  const showLine = React.useMemo(() => {
+    if (showMapPortalLines) {
+      if (showMapPortalLinesType === MapPortalLinesType.Hover) {
+        return hovered;
+      }
+      return true;
+    }
+    return false;
+  }, [showMapPortalLines, showMapPortalLinesType, hovered]);
+
+  // Notes:
+  // Positive x means we have to move map to the right (and vice versa)
+  // Negative y means we have to move map up (and vice versa)
   const onPortal1Click = React.useCallback(() => {
     // Move map to portal2
     // Calculate distance between the two
     const xDiff = portal1.x - portal2.x;
     const yDiff = portal1.y - portal2.y;
-
-    // Notes:
-    // Positive x means we have to move map to the right (and vice versa)
-    // Negative y means we have to move map up (and vice versa)
     offsetMapCoords(xDiff * scale, yDiff * scale);
   }, [portal1, portal2, offsetMapCoords, scale]);
 
@@ -89,7 +92,7 @@ export const MapPortal = (props: MapPortalProps) => {
           />
         </>
       )}
-      {(showLines || (showLinesOnHover && hovered)) && (
+      {showLine && (
         <line
           className={`map-portal-line ${hovered ? "hovered" : ""}`}
           x1={portal1.x + 10}

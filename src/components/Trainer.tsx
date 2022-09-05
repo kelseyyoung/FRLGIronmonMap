@@ -13,28 +13,20 @@ import { useEntityMark, useHoverableTooltip } from "../hooks";
 import { InteractablePolygon } from "./InteractablePolygon";
 import React from "react";
 import { EntityMarkIcon } from "./EntityMark";
+import { useAppSelector } from "../state";
 
-export interface TrainerProps extends TrainerData {
-  showTooltip?: boolean;
-}
+export interface TrainerProps extends TrainerData {}
 
 export const Trainer = (props: TrainerProps) => {
-  const {
-    name,
-    numPokemon,
-    x,
-    y,
-    showTooltip,
-    walker,
-    spinner,
-    pokemonLevels,
-  } = props;
+  const { name, numPokemon, x, y, walker, spinner, pokemonLevels } = props;
   const marks = React.useRef<EntityMarkIcon[]>([
     "none",
     "checked",
     "crossed",
     "starred",
   ]);
+
+  const showTooltip = useAppSelector((state) => state.settings).showTrainerData;
 
   const { currentMark, incrementMark, EntityMark } = useEntityMark(
     marks.current
@@ -72,23 +64,31 @@ export const Trainer = (props: TrainerProps) => {
         <div className="trainer-name">{name}</div>
         <div className="trainer-info">
           <span className="trainer-info-section">
-            <img className="trainer-info-icon" src={PokeBall} />
+            <img
+              alt="Number of Pokemon"
+              className="trainer-info-icon"
+              src={PokeBall}
+            />
             {numPokemon}
           </span>
           {formattedPokemonLevels && (
             <span className="trainer-info-section">
-              <img className="trainer-info-icon" src={Levels} />
+              <img
+                alt="Pokemon Levels"
+                className="trainer-info-icon"
+                src={Levels}
+              />
               {formattedPokemonLevels}
             </span>
           )}
           {spinner && (
             <span className="trainer-info-section">
-              <img className="trainer-info-icon" src={Spinner} />
+              <img alt="Spinner" className="trainer-info-icon" src={Spinner} />
             </span>
           )}
           {walker && (
             <span className="trainer-info-section">
-              <img className="trainer-info-icon" src={Walking} />
+              <img alt="Walker" className="trainer-info-icon" src={Walking} />
             </span>
           )}
         </div>

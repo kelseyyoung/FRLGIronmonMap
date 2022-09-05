@@ -4,50 +4,35 @@ import PokeBall from "../assets/PokeballItem.png";
 import TMItem from "../assets/TMItem.png";
 import HiddenItem from "../assets/HiddenItem.png";
 import { Dialog, DialogTitle, Icon } from "@mui/material";
+import {
+  MapPortalLinesType,
+  mapSettingsSlice,
+  useAppDispatch,
+  useAppSelector,
+} from "../state";
 
-export type CheckboxClickedCallback = (newVal: boolean) => void;
-
-export interface ControlPanelProps {
-  onShowTrainerDataClicked?: CheckboxClickedCallback;
-  onShowItemDataClicked?: CheckboxClickedCallback;
-  onHighlightItemsClicked?: CheckboxClickedCallback;
-  onHighlightTMsClicked?: CheckboxClickedCallback;
-  onHighlightHiddenClicked?: CheckboxClickedCallback;
-  onShowMapPortalsClicked?: CheckboxClickedCallback;
-  onShowMapPortalLinesClicked?: CheckboxClickedCallback;
-  onShowMapPortalLinesHoverClicked?: CheckboxClickedCallback;
-}
-
-// TODO: perhaps useMemo this inside ControlPanel
-const invertValueHandler = (
-  callback: React.Dispatch<React.SetStateAction<boolean>>
-) => {
-  return () => {
-    callback((value) => !value);
-  };
-};
-
-export const ControlPanel = (props: ControlPanelProps) => {
+export const ControlPanel = () => {
   const {
-    onShowTrainerDataClicked,
-    onShowItemDataClicked,
-    onHighlightItemsClicked,
-    onHighlightTMsClicked,
-    onHighlightHiddenClicked,
-    onShowMapPortalsClicked,
-    onShowMapPortalLinesClicked,
-    onShowMapPortalLinesHoverClicked,
-  } = props;
-
-  const [showTrainerData, setShowTrainerData] = React.useState(false);
-  const [showItemData, setShowItemData] = React.useState(false);
-  const [highlightItems, setHighlightItems] = React.useState(false);
-  const [highlightTMs, setHighlightTMs] = React.useState(false);
-  const [highlightHidden, setHighlightHidden] = React.useState(false);
-  const [showMapPortals, setShowMapPortals] = React.useState(false);
-  const [showMapPortalLines, setShowMapPortalLines] = React.useState(false);
-  const [portalLinesRadioValue, setPortalLinesRadioValue] =
-    React.useState<string>("always");
+    showTrainerData,
+    showItemData,
+    highlightItems,
+    highlightTMs,
+    highlightHiddenItems,
+    showMapPortals,
+    showMapPortalLines,
+    showMapPortalLinesType,
+  } = useAppSelector((state) => state.settings);
+  const {
+    setShowTrainerData,
+    setShowItemData,
+    setHighlightItems,
+    setHighlightTMs,
+    setHighlightHiddenItems,
+    setShowMapPortals,
+    setShowMapPortalLines,
+    setShowMapPortalLinesType,
+  } = mapSettingsSlice.actions;
+  const dispatch = useAppDispatch();
 
   const [collapsed, setCollapsed] = React.useState(false);
 
@@ -56,50 +41,14 @@ export const ControlPanel = (props: ControlPanelProps) => {
 
   const onPortalLinesRadioChanged = React.useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
-      setPortalLinesRadioValue(event.target.value);
+      dispatch(
+        setShowMapPortalLinesType(
+          parseInt(event.target.value) as MapPortalLinesType
+        )
+      );
     },
-    [setPortalLinesRadioValue]
+    [dispatch, setShowMapPortalLinesType]
   );
-
-  React.useEffect(() => {
-    onShowTrainerDataClicked?.(showTrainerData);
-  }, [onShowTrainerDataClicked, showTrainerData]);
-
-  React.useEffect(() => {
-    onShowItemDataClicked?.(showItemData);
-  }, [onShowItemDataClicked, showItemData]);
-
-  React.useEffect(() => {
-    onHighlightItemsClicked?.(highlightItems);
-  }, [onHighlightItemsClicked, highlightItems]);
-
-  React.useEffect(() => {
-    onHighlightTMsClicked?.(highlightTMs);
-  }, [onHighlightTMsClicked, highlightTMs]);
-
-  React.useEffect(() => {
-    onHighlightHiddenClicked?.(highlightHidden);
-  }, [onHighlightHiddenClicked, highlightHidden]);
-
-  React.useEffect(() => {
-    onShowMapPortalsClicked?.(showMapPortals);
-  }, [onShowMapPortalsClicked, showMapPortals]);
-
-  React.useEffect(() => {
-    onShowMapPortalLinesClicked?.(
-      showMapPortalLines && portalLinesRadioValue === "always"
-    );
-  }, [onShowMapPortalLinesClicked, showMapPortalLines, portalLinesRadioValue]);
-
-  React.useEffect(() => {
-    onShowMapPortalLinesHoverClicked?.(
-      showMapPortalLines && portalLinesRadioValue === "hover"
-    );
-  }, [
-    onShowMapPortalLinesHoverClicked,
-    showMapPortalLines,
-    portalLinesRadioValue,
-  ]);
 
   return (
     <>
@@ -119,7 +68,7 @@ export const ControlPanel = (props: ControlPanelProps) => {
           <input
             type="checkbox"
             checked={showTrainerData}
-            onChange={invertValueHandler(setShowTrainerData)}
+            onChange={() => dispatch(setShowTrainerData(!showTrainerData))}
           />
           <label className="checkbox-label">Show Trainer Data</label>
         </div>
@@ -127,7 +76,7 @@ export const ControlPanel = (props: ControlPanelProps) => {
           <input
             type="checkbox"
             checked={showItemData}
-            onChange={invertValueHandler(setShowItemData)}
+            onChange={() => dispatch(setShowItemData(!showItemData))}
           />
           <label className="checkbox-label">Show Item Data</label>
         </div>
@@ -136,27 +85,33 @@ export const ControlPanel = (props: ControlPanelProps) => {
           <input
             type="checkbox"
             checked={highlightItems}
-            onChange={invertValueHandler(setHighlightItems)}
+            onChange={() => dispatch(setHighlightItems(!highlightItems))}
           />
-          <img className="item-checkbox-img" src={PokeBall} />
+          <img alt="Item" className="item-checkbox-img" src={PokeBall} />
           <label className="checkbox-label">Regular</label>
         </div>
         <div className="checkbox-group">
           <input
             type="checkbox"
             checked={highlightTMs}
-            onChange={invertValueHandler(setHighlightTMs)}
+            onChange={() => dispatch(setHighlightTMs(!highlightTMs))}
           />
-          <img className="item-checkbox-img" src={TMItem} />
+          <img alt="TM" className="item-checkbox-img" src={TMItem} />
           <label className="checkbox-label">TMs</label>
         </div>
         <div className="checkbox-group">
           <input
             type="checkbox"
-            checked={highlightHidden}
-            onChange={invertValueHandler(setHighlightHidden)}
+            checked={highlightHiddenItems}
+            onChange={() =>
+              dispatch(setHighlightHiddenItems(!highlightHiddenItems))
+            }
           />
-          <img className="item-checkbox-img" src={HiddenItem} />
+          <img
+            alt="Hidden Item"
+            className="item-checkbox-img"
+            src={HiddenItem}
+          />
           <label className="checkbox-label">Hidden</label>
         </div>
         <div className="control-panel-subtitle">Map Portals</div>
@@ -164,7 +119,7 @@ export const ControlPanel = (props: ControlPanelProps) => {
           <input
             type="checkbox"
             checked={showMapPortals}
-            onChange={invertValueHandler(setShowMapPortals)}
+            onChange={() => dispatch(setShowMapPortals(!showMapPortals))}
           />
           <label className="checkbox-label">Show Map Portals</label>
         </div>
@@ -172,7 +127,9 @@ export const ControlPanel = (props: ControlPanelProps) => {
           <input
             type="checkbox"
             checked={showMapPortalLines}
-            onChange={invertValueHandler(setShowMapPortalLines)}
+            onChange={() =>
+              dispatch(setShowMapPortalLines(!showMapPortalLines))
+            }
           />
           <label className="checkbox-label">Connect Portals</label>
         </div>
@@ -180,10 +137,10 @@ export const ControlPanel = (props: ControlPanelProps) => {
           <input
             type="radio"
             name="portalLines"
-            checked={portalLinesRadioValue === "always"}
+            checked={showMapPortalLinesType === MapPortalLinesType.Always}
             disabled={!showMapPortalLines}
             onChange={onPortalLinesRadioChanged}
-            value="always"
+            value={MapPortalLinesType.Always}
           />
           <label className={`${!showMapPortalLines ? "disabled" : ""}`}>
             Always
@@ -191,10 +148,10 @@ export const ControlPanel = (props: ControlPanelProps) => {
           <input
             type="radio"
             name="portalLines"
-            checked={portalLinesRadioValue === "hover"}
+            checked={showMapPortalLinesType === MapPortalLinesType.Hover}
             disabled={!showMapPortalLines}
             onChange={onPortalLinesRadioChanged}
-            value="hover"
+            value={MapPortalLinesType.Hover}
           />
           <label className={`${!showMapPortalLines ? "disabled" : ""}`}>
             Hover
@@ -223,6 +180,7 @@ export const ControlPanel = (props: ControlPanelProps) => {
         <div className="dialog-text">
           More information about this map can be found on the{" "}
           <a
+            rel="noreferrer"
             href="https://github.com/kelseyyoung/FRLGIronmonMap"
             target="_blank"
           >
@@ -239,6 +197,7 @@ export const ControlPanel = (props: ControlPanelProps) => {
           This is very much still a work in progress so there are sure to be
           bugs/missing data. The best way to file an issue is on{" "}
           <a
+            rel="noreferrer"
             href="https://github.com/kelseyyoung/FRLGIronmonMap/issues"
             target="_blank"
           >
