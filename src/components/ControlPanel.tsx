@@ -150,12 +150,16 @@ export const ControlPanel = (props: ControlPanelProps) => {
           >
             Github README
           </a>
+          . This has been a fun passion project of mine, and I appreciate you
+          checking out the app! Shoutouts to the Ironmon community as well for
+          creating such a fun challenge run!
         </div>
       </Dialog>
       <Dialog open={helpDialogOpen} onClose={() => setHelpDialogOpen(false)}>
         <DialogTitle>Help</DialogTitle>
         <div className="dialog-text">
-          Found an issue? File an issue on{" "}
+          This is very much still a work in progress so there are sure to be
+          bugs/missing data. The best way to file an issue is on{" "}
           <a
             href="https://github.com/kelseyyoung/FRLGIronmonMap/issues"
             target="_blank"
