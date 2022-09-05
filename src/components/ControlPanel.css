@@ -40,22 +40,31 @@
   font-size: 12px;
 }
 
-.checkbox-group {
+.checkbox-group,
+.checkbox-label,
+.radio-label {
   display: flex;
   flex-direction: row;
   align-items: center;
   line-height: 16px;
 }
 
+.checkbox-label,
+.radio-label,
+.checkbox-label input[type="checkbox"],
+.radio-label input[type="radio"] {
+  cursor: pointer;
+}
+
 .control-panel input[type="checkbox"] {
   height: 16px;
   width: 16px;
   margin: 2px;
+  margin-right: 4px;
 }
 
-.checkbox-label,
 .item-checkbox-img {
-  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .control-panel .buttons-container {
@@ -109,7 +118,15 @@
 
 .dialog-text {
   padding: 10px 24px;
-  margin-bottom: 10px;
+}
+
+.dialog-text .demo-gif {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.dialog-text .demo-gif img {
+  width: 80%;
 }
 
 .control-panel label.disabled {
