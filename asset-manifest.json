@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/FRLGIronmonMap/static/css/main.06411981.css",
-    "main.js": "/FRLGIronmonMap/static/js/main.543e0abf.js",
+    "main.css": "/FRLGIronmonMap/static/css/main.6f7ac1ef.css",
+    "main.js": "/FRLGIronmonMap/static/js/main.e4b7ff68.js",
     "static/media/FullKanto.png": "/FRLGIronmonMap/static/media/FullKanto.54c40dbedb082f39fe32.png",
+    "static/media/MapPortalsDemo.gif": "/FRLGIronmonMap/static/media/MapPortalsDemo.dd8aa90ec2c2f21f9679.gif",
+    "static/media/PortalClickDemo.gif": "/FRLGIronmonMap/static/media/PortalClickDemo.a893001de870427cc2bf.gif",
+    "static/media/TrainerDemo.gif": "/FRLGIronmonMap/static/media/TrainerDemo.23bc8b2935461fb596ba.gif",
+    "static/media/ItemDemo.gif": "/FRLGIronmonMap/static/media/ItemDemo.19763aeb8c75ea52d14d.gif",
     "static/media/pokeball.png": "/FRLGIronmonMap/static/media/pokeball.a423f307223251ab7bff.png",
     "static/media/star.png": "/FRLGIronmonMap/static/media/star.8ee1f0879d78a0f695bf.png",
     "static/media/checkmark.png": "/FRLGIronmonMap/static/media/checkmark.d3a535b4929ab14365bf.png",
     "index.html": "/FRLGIronmonMap/index.html",
-    "main.06411981.css.map": "/FRLGIronmonMap/static/css/main.06411981.css.map",
-    "main.543e0abf.js.map": "/FRLGIronmonMap/static/js/main.543e0abf.js.map"
+    "main.6f7ac1ef.css.map": "/FRLGIronmonMap/static/css/main.6f7ac1ef.css.map",
+    "main.e4b7ff68.js.map": "/FRLGIronmonMap/static/js/main.e4b7ff68.js.map"
   },
   "entrypoints": [
-    "static/css/main.06411981.css",
-    "static/js/main.543e0abf.js"
+    "static/css/main.6f7ac1ef.css",
+    "static/js/main.e4b7ff68.js"
   ]
 }
