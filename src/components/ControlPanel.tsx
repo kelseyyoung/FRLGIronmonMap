@@ -46,13 +46,20 @@ export const ControlPanel = (props: ControlPanelProps) => {
   const [highlightHidden, setHighlightHidden] = React.useState(false);
   const [showMapPortals, setShowMapPortals] = React.useState(false);
   const [showMapPortalLines, setShowMapPortalLines] = React.useState(false);
-  const [showMapPortalLinesHover, setShowMapPortalLinesHover] =
-    React.useState(false);
+  const [portalLinesRadioValue, setPortalLinesRadioValue] =
+    React.useState<string>("always");
 
   const [collapsed, setCollapsed] = React.useState(false);
 
   const [helpDialogOpen, setHelpDialogOpen] = React.useState(false);
   const [infoDialogOpen, setInfoDialogOpen] = React.useState(false);
+
+  const onPortalLinesRadioChanged = React.useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setPortalLinesRadioValue(event.target.value);
+    },
+    [setPortalLinesRadioValue]
+  );
 
   React.useEffect(() => {
     onShowTrainerDataClicked?.(showTrainerData);
@@ -79,12 +86,20 @@ export const ControlPanel = (props: ControlPanelProps) => {
   }, [onShowMapPortalsClicked, showMapPortals]);
 
   React.useEffect(() => {
-    onShowMapPortalLinesClicked?.(showMapPortalLines);
-  }, [onShowMapPortalLinesClicked, showMapPortalLines]);
+    onShowMapPortalLinesClicked?.(
+      showMapPortalLines && portalLinesRadioValue === "always"
+    );
+  }, [onShowMapPortalLinesClicked, showMapPortalLines, portalLinesRadioValue]);
 
   React.useEffect(() => {
-    onShowMapPortalLinesHoverClicked?.(showMapPortalLinesHover);
-  }, [onShowMapPortalLinesHoverClicked, showMapPortalLinesHover]);
+    onShowMapPortalLinesHoverClicked?.(
+      showMapPortalLines && portalLinesRadioValue === "hover"
+    );
+  }, [
+    onShowMapPortalLinesHoverClicked,
+    showMapPortalLines,
+    portalLinesRadioValue,
+  ]);
 
   return (
     <>
@@ -153,22 +168,37 @@ export const ControlPanel = (props: ControlPanelProps) => {
           />
           <label className="checkbox-label">Show Map Portals</label>
         </div>
-        <label className="checkbox-label">Connect Portals</label>
         <div className="checkbox-group">
           <input
             type="checkbox"
             checked={showMapPortalLines}
             onChange={invertValueHandler(setShowMapPortalLines)}
           />
-          <label className="checkbox-label">Always</label>
+          <label className="checkbox-label">Connect Portals</label>
         </div>
         <div className="checkbox-group">
           <input
-            type="checkbox"
-            checked={showMapPortalLinesHover}
-            onChange={invertValueHandler(setShowMapPortalLinesHover)}
+            type="radio"
+            name="portalLines"
+            checked={portalLinesRadioValue === "always"}
+            disabled={!showMapPortalLines}
+            onChange={onPortalLinesRadioChanged}
+            value="always"
           />
-          <label className="checkbox-label">On Hover</label>
+          <label className={`${!showMapPortalLines ? "disabled" : ""}`}>
+            Always
+          </label>
+          <input
+            type="radio"
+            name="portalLines"
+            checked={portalLinesRadioValue === "hover"}
+            disabled={!showMapPortalLines}
+            onChange={onPortalLinesRadioChanged}
+            value="hover"
+          />
+          <label className={`${!showMapPortalLines ? "disabled" : ""}`}>
+            Hover
+          </label>
         </div>
         <hr />
         <div className="buttons-container">

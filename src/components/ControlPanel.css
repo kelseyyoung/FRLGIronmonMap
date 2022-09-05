@@ -111,3 +111,7 @@
   padding: 10px 24px;
   margin-bottom: 10px;
 }
+
+.control-panel label.disabled {
+  opacity: 0.4;
+}
