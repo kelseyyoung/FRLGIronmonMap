@@ -16,6 +16,7 @@ export const mapSettingsSlice = createSlice({
     showMapPortals: false,
     showMapPortalLines: false,
     showMapPortalLinesType: MapPortalLinesType.Always,
+    showRoutes: false,
   },
   reducers: {
     setShowTrainerData: (state, action: PayloadAction<boolean>) => {
@@ -44,6 +45,9 @@ export const mapSettingsSlice = createSlice({
       action: PayloadAction<MapPortalLinesType>
     ) => {
       state.showMapPortalLinesType = action.payload;
+    },
+    setShowRoutes: (state, action: PayloadAction<boolean>) => {
+      state.showRoutes = action.payload;
     },
   },
 });

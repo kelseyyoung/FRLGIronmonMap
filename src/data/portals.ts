@@ -1012,6 +1012,16 @@ export const portalGroups: MapPortalGroup[] = [
       },
       {
         portal1: {
+          x: 1333,
+          y: 842,
+        },
+        portal2: {
+          x: 1338,
+          y: 506,
+        },
+      },
+      {
+        portal1: {
           x: 1361,
           y: 472,
         },

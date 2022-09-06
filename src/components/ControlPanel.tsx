@@ -25,6 +25,7 @@ export const ControlPanel = () => {
     showMapPortals,
     showMapPortalLines,
     showMapPortalLinesType,
+    showRoutes,
   } = useAppSelector((state) => state.settings);
   const {
     setShowTrainerData,
@@ -35,6 +36,7 @@ export const ControlPanel = () => {
     setShowMapPortals,
     setShowMapPortalLines,
     setShowMapPortalLinesType,
+    setShowRoutes,
   } = mapSettingsSlice.actions;
   const dispatch = useAppDispatch();
 
@@ -179,6 +181,17 @@ export const ControlPanel = () => {
             Hover
           </label>
         </div>
+        <div className="control-panel-subtitle">Routes</div>
+        <div className="checkbox-group">
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={showRoutes}
+              onChange={() => dispatch(setShowRoutes(!showRoutes))}
+            />
+            Show Routes
+          </label>
+        </div>
         <hr />
         <div className="buttons-container">
           <button
@@ -233,7 +246,48 @@ export const ControlPanel = () => {
             <img src={MapPortalsDemo} />
           </div>
         </div>
-        <div className="dialog-text centered">
+        <div className="dialog-text">
+          <h4>Credits</h4>
+          <div>
+            Maps from{" "}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.vgmaps.com/Atlas/GBA/index.htm#PokemonFireRedVersion"
+            >
+              VGMaps
+            </a>
+          </div>
+          <div>
+            Sprites from{" "}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.spriters-resource.com/game_boy_advance/pokemonfireredleafgreen/"
+            >
+              The Spriters Resource
+            </a>
+          </div>
+          <div>
+            Hidden item and map information from{" "}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://imgur.com/a/vw7y5mp"
+            >
+              these
+            </a>{" "}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://imgur.com/a/DnDEi9i"
+            >
+              two
+            </a>{" "}
+            imgur albums, from the Ironmon community
+          </div>
+        </div>
+        <div className="dialog-text">
           More information about this map can be found on the{" "}
           <a
             rel="noreferrer"
