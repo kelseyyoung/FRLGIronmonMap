@@ -3,6 +3,10 @@ import "./ControlPanel.css";
 import PokeBall from "../assets/PokeballItem.png";
 import TMItem from "../assets/TMItem.png";
 import HiddenItem from "../assets/HiddenItem.png";
+import TrainerDemo from "../assets/demoGifs/TrainerDemo.gif";
+import ItemDemo from "../assets/demoGifs/ItemDemo.gif";
+import PortalClickDemo from "../assets/demoGifs/PortalClickDemo.gif";
+import MapPortalsDemo from "../assets/demoGifs/MapPortalsDemo.gif";
 import { Dialog, DialogTitle, Icon } from "@mui/material";
 import {
   MapPortalLinesType,
@@ -21,6 +25,7 @@ export const ControlPanel = () => {
     showMapPortals,
     showMapPortalLines,
     showMapPortalLinesType,
+    showRoutes,
   } = useAppSelector((state) => state.settings);
   const {
     setShowTrainerData,
@@ -31,6 +36,7 @@ export const ControlPanel = () => {
     setShowMapPortals,
     setShowMapPortalLines,
     setShowMapPortalLinesType,
+    setShowRoutes,
   } = mapSettingsSlice.actions;
   const dispatch = useAppDispatch();
 
@@ -65,96 +71,125 @@ export const ControlPanel = () => {
         </div>
         <div className="control-panel-subtitle">Trainer/Item Info</div>
         <div className="checkbox-group">
-          <input
-            type="checkbox"
-            checked={showTrainerData}
-            onChange={() => dispatch(setShowTrainerData(!showTrainerData))}
-          />
-          <label className="checkbox-label">Show Trainer Data</label>
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={showTrainerData}
+              onChange={() => dispatch(setShowTrainerData(!showTrainerData))}
+            />
+            Show Trainer Data
+          </label>
         </div>
         <div className="checkbox-group">
-          <input
-            type="checkbox"
-            checked={showItemData}
-            onChange={() => dispatch(setShowItemData(!showItemData))}
-          />
-          <label className="checkbox-label">Show Item Data</label>
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={showItemData}
+              onChange={() => dispatch(setShowItemData(!showItemData))}
+            />
+            Show Item Data
+          </label>
         </div>
         <div className="control-panel-subtitle">Highlight Items</div>
         <div className="checkbox-group">
-          <input
-            type="checkbox"
-            checked={highlightItems}
-            onChange={() => dispatch(setHighlightItems(!highlightItems))}
-          />
-          <img alt="Item" className="item-checkbox-img" src={PokeBall} />
-          <label className="checkbox-label">Regular</label>
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={highlightItems}
+              onChange={() => dispatch(setHighlightItems(!highlightItems))}
+            />
+            <img alt="Item" className="item-checkbox-img" src={PokeBall} />
+            Regular
+          </label>
         </div>
         <div className="checkbox-group">
-          <input
-            type="checkbox"
-            checked={highlightTMs}
-            onChange={() => dispatch(setHighlightTMs(!highlightTMs))}
-          />
-          <img alt="TM" className="item-checkbox-img" src={TMItem} />
-          <label className="checkbox-label">TMs</label>
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={highlightTMs}
+              onChange={() => dispatch(setHighlightTMs(!highlightTMs))}
+            />
+            <img alt="TM" className="item-checkbox-img" src={TMItem} />
+            TMs
+          </label>
         </div>
         <div className="checkbox-group">
-          <input
-            type="checkbox"
-            checked={highlightHiddenItems}
-            onChange={() =>
-              dispatch(setHighlightHiddenItems(!highlightHiddenItems))
-            }
-          />
-          <img
-            alt="Hidden Item"
-            className="item-checkbox-img"
-            src={HiddenItem}
-          />
-          <label className="checkbox-label">Hidden</label>
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={highlightHiddenItems}
+              onChange={() =>
+                dispatch(setHighlightHiddenItems(!highlightHiddenItems))
+              }
+            />
+            <img
+              alt="Hidden Item"
+              className="item-checkbox-img"
+              src={HiddenItem}
+            />
+            Hidden
+          </label>
         </div>
         <div className="control-panel-subtitle">Map Portals</div>
         <div className="checkbox-group">
-          <input
-            type="checkbox"
-            checked={showMapPortals}
-            onChange={() => dispatch(setShowMapPortals(!showMapPortals))}
-          />
-          <label className="checkbox-label">Show Map Portals</label>
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={showMapPortals}
+              onChange={() => dispatch(setShowMapPortals(!showMapPortals))}
+            />
+            Show Map Portals
+          </label>
         </div>
         <div className="checkbox-group">
-          <input
-            type="checkbox"
-            checked={showMapPortalLines}
-            onChange={() =>
-              dispatch(setShowMapPortalLines(!showMapPortalLines))
-            }
-          />
-          <label className="checkbox-label">Connect Portals</label>
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={showMapPortalLines}
+              onChange={() =>
+                dispatch(setShowMapPortalLines(!showMapPortalLines))
+              }
+            />
+            Connect Portals
+          </label>
         </div>
         <div className="checkbox-group">
-          <input
-            type="radio"
-            name="portalLines"
-            checked={showMapPortalLinesType === MapPortalLinesType.Always}
-            disabled={!showMapPortalLines}
-            onChange={onPortalLinesRadioChanged}
-            value={MapPortalLinesType.Always}
-          />
-          <label className={`${!showMapPortalLines ? "disabled" : ""}`}>
+          <label
+            className={`radio-label ${!showMapPortalLines ? "disabled" : ""}`}
+          >
+            <input
+              type="radio"
+              name="portalLines"
+              checked={showMapPortalLinesType === MapPortalLinesType.Always}
+              disabled={!showMapPortalLines}
+              onChange={onPortalLinesRadioChanged}
+              value={MapPortalLinesType.Always}
+            />
             Always
           </label>
-          <input
-            type="radio"
-            name="portalLines"
-            checked={showMapPortalLinesType === MapPortalLinesType.Hover}
-            disabled={!showMapPortalLines}
-            onChange={onPortalLinesRadioChanged}
-            value={MapPortalLinesType.Hover}
-          />
-          <label className={`${!showMapPortalLines ? "disabled" : ""}`}>
+          <label
+            className={`radio-label ${!showMapPortalLines ? "disabled" : ""}`}
+          >
+            <input
+              type="radio"
+              name="portalLines"
+              checked={showMapPortalLinesType === MapPortalLinesType.Hover}
+              disabled={!showMapPortalLines}
+              onChange={onPortalLinesRadioChanged}
+              value={MapPortalLinesType.Hover}
+            />
             Hover
+          </label>
+        </div>
+        <div className="control-panel-subtitle">Routes</div>
+        <div className="checkbox-group">
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={showRoutes}
+              onChange={() => dispatch(setShowRoutes(!showRoutes))}
+            />
+            Show Routes
           </label>
         </div>
         <hr />
@@ -175,8 +210,83 @@ export const ControlPanel = () => {
           </button>
         </div>
       </div>
-      <Dialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)}>
+      <Dialog
+        open={infoDialogOpen}
+        onClose={() => setInfoDialogOpen(false)}
+        scroll={"paper"}
+        maxWidth={"md"}
+      >
         <DialogTitle>About</DialogTitle>
+        <div className="dialog-text">
+          Trainer information is available on hover, showing the number of
+          pokemon they have, the levels of their pokemon, and any movement
+          information. Trainers can be "marked" by clicking on them
+          <div className="demo-gif">
+            <img src={TrainerDemo} />
+          </div>
+        </div>
+        <div className="dialog-text">
+          Items are also clickable/markable, and hidden items with step spawn
+          rates have that information shown on hover
+          <div className="demo-gif">
+            <img src={ItemDemo} />
+          </div>
+        </div>
+        <div className="dialog-text">
+          Map "portals", like cave entrances and ladders, are clickable too!
+          They will move the map to where it connects
+          <div className="demo-gif">
+            <img src={PortalClickDemo} />
+          </div>
+        </div>
+        <div className="dialog-text">
+          You can highlight all map portals via the Control Panel with various
+          display options
+          <div className="demo-gif">
+            <img src={MapPortalsDemo} />
+          </div>
+        </div>
+        <div className="dialog-text">
+          <h4>Credits</h4>
+          <div>
+            Maps from{" "}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.vgmaps.com/Atlas/GBA/index.htm#PokemonFireRedVersion"
+            >
+              VGMaps
+            </a>
+          </div>
+          <div>
+            Sprites from{" "}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.spriters-resource.com/game_boy_advance/pokemonfireredleafgreen/"
+            >
+              The Spriters Resource
+            </a>
+          </div>
+          <div>
+            Hidden item and map information from{" "}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://imgur.com/a/vw7y5mp"
+            >
+              these
+            </a>{" "}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://imgur.com/a/DnDEi9i"
+            >
+              two
+            </a>{" "}
+            imgur albums, from the Ironmon community
+          </div>
+        </div>
         <div className="dialog-text">
           More information about this map can be found on the{" "}
           <a
@@ -188,10 +298,22 @@ export const ControlPanel = () => {
           </a>
           . This has been a fun passion project of mine, and I appreciate you
           checking out the app! Shoutouts to the Ironmon community as well for
-          creating such a fun challenge run!
+          creating such a fun challenge run! If you are interested in learning
+          more about Ironmon,{" "}
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://discord.gg/QEEsmNUX"
+          >
+            join the discord
+          </a>
         </div>
       </Dialog>
-      <Dialog open={helpDialogOpen} onClose={() => setHelpDialogOpen(false)}>
+      <Dialog
+        open={helpDialogOpen}
+        onClose={() => setHelpDialogOpen(false)}
+        scroll={"paper"}
+      >
         <DialogTitle>Help</DialogTitle>
         <div className="dialog-text">
           This is very much still a work in progress so there are sure to be
