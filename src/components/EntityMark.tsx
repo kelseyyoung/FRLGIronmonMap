@@ -26,18 +26,16 @@ export interface EntityMarkProps {
   x: number;
   y: number;
   size: number;
-  imageProps?: React.SVGProps<SVGImageElement>;
 }
 
 // TODO: add react.memo to all components?
 export const EntityMark = (props: EntityMarkProps) => {
-  const { mark, x, y, size, imageProps } = props;
+  const { mark, x, y, size } = props;
 
   return entityMarkIconMap[mark]({
     x,
     y,
     height: size,
     width: size,
-    ...imageProps,
   });
 };

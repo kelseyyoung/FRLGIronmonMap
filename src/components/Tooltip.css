@@ -3,9 +3,10 @@
   background-color: rgba(238, 238, 238, 0.9);
   padding: 2px;
   font-size: 10px;
-  z-index: 1000;
   border-radius: 2px;
   font-weight: 500;
+  white-space: nowrap;
+  pointer-events: auto;
 }
 
 .tooltip-beak {

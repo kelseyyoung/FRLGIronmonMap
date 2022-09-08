@@ -1496,7 +1496,7 @@ export const trainers: TrainerData[] = [
     numPokemon: 3,
     pokemonLevels: [42, 42, 42],
     x: 4540,
-    y: 5126,
+    y: 5161,
     walker: true,
   },
   {

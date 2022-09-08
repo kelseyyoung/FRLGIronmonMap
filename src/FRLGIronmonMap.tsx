@@ -44,7 +44,7 @@ export const FRLGIronmonMap = () => {
   );
 
   return (
-    <div className="frlg-ironmon-map">
+    <div className="ironmon-map">
       <ControlPanel />
       <MapInteractionCSS
         value={mapData}
@@ -53,24 +53,37 @@ export const FRLGIronmonMap = () => {
         }}
         maxScale={100}
       >
-        <div id="tooltip-container"></div>
-        <div id="portal-label-container"></div>
+        <div
+          id="portal-label-container"
+          className="react-portal-container"
+        ></div>
+        <div id="tooltip-container" className="react-portal-container"></div>
+        {/* TODO: can we get the height and width from the image? Think "FullKanto" is just the string though */}
+        {/* if so, then put into variables */}
+        <img
+          width="7700"
+          height="6400"
+          src={FullKanto}
+          alt="Full Kanto"
+          className="full-map-img"
+        ></img>
+        <img
+          width="7700"
+          height="6400"
+          alt="All Routes"
+          className={`full-map-img ${
+            showRoutes ? "routes-visible" : "routes-hidden"
+          }`}
+          src={FullKantoPaths}
+        ></img>
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           width="7700"
           height="6400"
+          className="svg-container"
         >
-          {/* TODO: can we get the height and width from the image? Think "FullKanto" is just the string though */}
-          {/* if so, then put into variables */}
-          <image width="7700" height="6400" xlinkHref={FullKanto}></image>
-          <image
-            width="7700"
-            height="6400"
-            visibility={showRoutes ? "visible" : "hidden"}
-            xlinkHref={FullKantoPaths}
-          ></image>
           {trainers.map((trainer, index) => {
             return (
               <Trainer

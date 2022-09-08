@@ -15,6 +15,7 @@ export const Tooltip = (props: TooltipProps) => {
   const { x, y, show, children, targetWidth } = props;
   const el = React.useRef(document.createElement("div"));
 
+  const [zIndex, setZIndex] = React.useState(1000);
   const tooltipContainerRef = React.useRef<HTMLDivElement | null>(null);
 
   const tooltipHeight = tooltipContainerRef.current?.offsetHeight;
@@ -40,9 +41,16 @@ export const Tooltip = (props: TooltipProps) => {
         top: tooltipYPosition,
         left: tooltipXPosition,
         visibility: show ? "visible" : "hidden",
+        zIndex,
       }}
       ref={tooltipContainerRef}
       className="tooltip"
+      onMouseEnter={() => {
+        setZIndex(1001);
+      }}
+      onMouseLeave={() => {
+        setZIndex(1000);
+      }}
     >
       {DEBUG_MODE && (
         <span>
