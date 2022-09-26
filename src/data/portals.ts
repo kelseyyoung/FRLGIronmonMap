@@ -1,15 +1,4 @@
-import { BoundingBoxCoords } from "./trainers";
-
-export interface MapPortalData {
-  portal1: BoundingBoxCoords;
-  portal2: BoundingBoxCoords;
-}
-
-export type MapPortalGroup = {
-  color: string;
-  area: string;
-  portals: MapPortalData[];
-};
+import { MapPortalGroup } from "./dataUtils";
 
 export const defaultPortalSize = 24;
 

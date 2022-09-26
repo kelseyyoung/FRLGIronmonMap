@@ -20,6 +20,10 @@
   left: 0;
 }
 
+.full-map-img.pixelated {
+  image-rendering: pixelated;
+}
+
 .routes-visible {
   display: block;
 }

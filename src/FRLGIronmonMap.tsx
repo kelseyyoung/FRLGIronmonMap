@@ -49,6 +49,7 @@ export const FRLGIronmonMap = () => {
       <MapInteractionCSS
         value={mapData}
         onChange={(value: MapInteractionCSSValue) => {
+          console.log(value.scale);
           setMapData(value);
         }}
         maxScale={100}
@@ -65,7 +66,7 @@ export const FRLGIronmonMap = () => {
           height="6400"
           src={FullKanto}
           alt="Full Kanto"
-          className="full-map-img"
+          className="pixelated full-map-img"
         ></img>
         <img
           width="7700"

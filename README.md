@@ -4,6 +4,10 @@
 
 This is an interactive map of Pokemon FireRed/LeafGreen meant for Ironmon challenge runners. For information on what Ironmon is, [join the discord](https://discord.gg/QEEsmNUX)
 
+## Looking for other Ironmon Maps?
+
+[Emerald](https://kelseyyoung.github.io/EmeraldIronmonMap)
+
 ## Using the map
 
 Trainer information is available on hover, showing the number of pokemon they have, the levels of their pokemon, and any movement information. Trainers can be "marked" by clicking on them
