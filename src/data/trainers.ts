@@ -1755,9 +1755,8 @@ export const trainers: TrainerData[] = [
   },
 
   // Seafoam Islands
-  // TODO: name
   {
-    name: "Swimmer",
+    name: "Swimmer Tiffany",
     numPokemon: 1,
     pokemonLevels: [53],
     x: 2208,
