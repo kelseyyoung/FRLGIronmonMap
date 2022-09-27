@@ -33,6 +33,13 @@ You can highlight all map portals via the Control Panel with various display opt
 
 - First time initialization: `git submodule update --init --recursive`
 - Futher updates: `git pull --recurse-submodules`
+- If needing to make & push changes:
+
+```
+cd src/IronmonMapUtils
+git checkout main
+```
+
 - See the README in the [IronmonMapUtils repo](https://github.com/kelseyyoung/IronmonMapUtils) for more info
 
 3. Run `yarn` to install dependencies
