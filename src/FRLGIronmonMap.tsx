@@ -3,11 +3,19 @@ import FullKanto from "./assets/FullKanto.png";
 import FullKantoPaths from "./assets/FullKantoPaths.png";
 import "./FRLGIronmonMap.css";
 import { MapInteractionCSS } from "react-map-interaction";
-import { ControlPanel, Trainer, Item, MapPortal } from "./components";
-import { BoundingBoxCoords, items, trainers, portalGroups } from "./data";
-import { useAppSelector } from "./state";
-
-export const DEBUG_MODE = false;
+import { ControlPanel } from "./components";
+import {
+  items,
+  trainers,
+  portalGroups,
+  defaultItemHeight,
+  defaultItemWidth,
+  defaultPortalSize,
+  defaultTrainerHeight,
+  defaultTrainerWidth,
+} from "./data";
+import { BoundingBoxCoords, Item, MapPortal, Trainer } from "./IronmonMapUtils";
+import { useAppSelector } from "./IronmonMapUtils/state";
 
 export interface MapInteractionCSSValue {
   scale: number;
@@ -49,7 +57,6 @@ export const FRLGIronmonMap = () => {
       <MapInteractionCSS
         value={mapData}
         onChange={(value: MapInteractionCSSValue) => {
-          console.log(value.scale);
           setMapData(value);
         }}
         maxScale={100}
@@ -89,12 +96,21 @@ export const FRLGIronmonMap = () => {
             return (
               <Trainer
                 key={trainer.name.split(" ").join("") + "-" + index}
+                height={defaultTrainerHeight}
+                width={defaultTrainerWidth}
                 {...trainer}
               />
             );
           })}
           {items.map((item, index) => {
-            return <Item key={"item-" + index} {...item} />;
+            return (
+              <Item
+                key={"item-" + index}
+                height={defaultItemHeight}
+                width={defaultItemWidth}
+                {...item}
+              />
+            );
           })}
           {portalGroups.map((portalGroup) => {
             return portalGroup.portals.map((portal, portalIndex) => (
@@ -104,6 +120,7 @@ export const FRLGIronmonMap = () => {
                 scale={mapData.scale}
                 offsetMapCoords={offsetMapCoords}
                 color={portalGroup.color}
+                size={defaultPortalSize}
                 {...portal}
               />
             ));

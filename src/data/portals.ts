@@ -1,4 +1,4 @@
-import { MapPortalGroup } from "./dataUtils";
+import { MapPortalGroup } from "../IronmonMapUtils";
 
 export const defaultPortalSize = 24;
 

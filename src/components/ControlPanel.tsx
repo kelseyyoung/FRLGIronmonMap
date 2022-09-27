@@ -1,8 +1,8 @@
 import React from "react";
 import "./ControlPanel.css";
-import PokeBall from "../assets/PokeballItem.png";
-import TMItem from "../assets/TMItem.png";
-import HiddenItem from "../assets/HiddenItem.png";
+import PokeBall from "../IronmonMapUtils/assets/PokeballItem.png";
+import TMItem from "../IronmonMapUtils/assets/TMItem.png";
+import HiddenItem from "../IronmonMapUtils/assets/HiddenItem.png";
 import TrainerDemo from "../assets/demoGifs/TrainerDemo.gif";
 import ItemDemo from "../assets/demoGifs/ItemDemo.gif";
 import PortalClickDemo from "../assets/demoGifs/PortalClickDemo.gif";
@@ -13,7 +13,7 @@ import {
   mapSettingsSlice,
   useAppDispatch,
   useAppSelector,
-} from "../state";
+} from "../IronmonMapUtils/state";
 
 export const ControlPanel = () => {
   const {

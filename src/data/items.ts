@@ -1,4 +1,4 @@
-import { ItemData, ItemType } from "./dataUtils";
+import { ItemData, ItemType } from "../IronmonMapUtils";
 
 export const defaultItemHeight = 12;
 export const defaultItemWidth = 12;

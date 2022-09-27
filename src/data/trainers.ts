@@ -1,4 +1,4 @@
-import { TrainerData } from "./dataUtils";
+import { TrainerData } from "../IronmonMapUtils";
 
 export const defaultTrainerHeight = 22;
 export const defaultTrainerWidth = 18;
