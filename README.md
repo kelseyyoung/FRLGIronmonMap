@@ -28,12 +28,15 @@ You can highlight all map portals via the Control Panel with various display opt
 
 ## Developers
 
-1. Clone the repo with `git pull --recurse-submodules`
+1. Clone the repo
+2. Update the IronmonMapUtils submodule
 
-- This repo uses the [IronmonMapUtils](https://github.com/kelseyyoung/IronmonMapUtils) repo as a submodule
+- First time initialization: `git submodule update --init --recursive`
+- Futher updates: `git pull --recurse-submodules`
+- See the README in the [IronmonMapUtils repo](https://github.com/kelseyyoung/IronmonMapUtils) for more info
 
-2. Run `yarn` to install dependencies
-3. Run `yarn start` to start a local dev server
+3. Run `yarn` to install dependencies
+4. Run `yarn start` to start a local dev server
 
 ## Found an issue? Want to suggest a feature?
 
