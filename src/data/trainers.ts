@@ -481,8 +481,7 @@ export const trainers: TrainerData[] = [
   // S.S. Anne
   // Main Floor
   {
-    // TODO: what is this dude's name
-    name: "Gentleman",
+    name: "Gentleman Arthur",
     numPokemon: 2,
     pokemonLevels: [27, 27],
     x: 5376,
@@ -777,7 +776,7 @@ export const trainers: TrainerData[] = [
     y: 228,
   },
   {
-    name: "Picknicker Heidi",
+    name: "Picknicker Sofia",
     numPokemon: 3,
     pokemonLevels: [32, 32, 32],
     x: 6992,
@@ -1100,9 +1099,8 @@ export const trainers: TrainerData[] = [
     y: 2097,
     spinner: true,
   },
-  // TODO: Missing a channeler name here
   {
-    name: "Channeler",
+    name: "Channeler Ruth",
     numPokemon: 1,
     pokemonLevels: [33],
     x: 6694,
@@ -1174,8 +1172,7 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
   {
-    // TODO: no name
-    name: "Fisherman",
+    name: "Fisherman Hank",
     numPokemon: 1,
     pokemonLevels: [41],
     x: 6400,
@@ -1535,8 +1532,7 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
   {
-    // TODO: no name
-    name: "Cue Ball",
+    name: "Cue Ball Koji",
     numPokemon: 3,
     pokemonLevels: [42, 42, 42],
     x: 2334,
@@ -1552,9 +1548,9 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
 
-  // TODO: Biker names
+  // Lower part of Cycling Road
   {
-    name: "Biker",
+    name: "Biker Virgil",
     numPokemon: 3,
     pokemonLevels: [42, 42, 42],
     x: 2178,
@@ -1562,7 +1558,7 @@ export const trainers: TrainerData[] = [
     walker: true,
   },
   {
-    name: "Cue Ball",
+    name: "Cue Ball Isaiah",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 2289,
@@ -1570,7 +1566,7 @@ export const trainers: TrainerData[] = [
     walker: true,
   },
   {
-    name: "Cue Ball",
+    name: "Cue Ball Raul",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 2382,
@@ -1578,7 +1574,7 @@ export const trainers: TrainerData[] = [
     walker: true,
   },
   {
-    name: "Biker",
+    name: "Biker Billy",
     numPokemon: 1,
     pokemonLevels: [50],
     x: 2221,
@@ -1586,14 +1582,14 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
   {
-    name: "Cue Ball",
+    name: "Cue Ball Jamal",
     numPokemon: 4,
     pokemonLevels: [39, 39, 39, 39],
     x: 2144,
     y: 3370,
   },
   {
-    name: "Biker",
+    name: "Biker Jaxon",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 2176,
@@ -1601,7 +1597,7 @@ export const trainers: TrainerData[] = [
     walker: true,
   },
   {
-    name: "Biker",
+    name: "Biker Nikolas",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 2401,
@@ -1609,14 +1605,14 @@ export const trainers: TrainerData[] = [
     walker: true,
   },
   {
-    name: "Cue Ball",
+    name: "Cue Ball Zeek",
     numPokemon: 1,
     pokemonLevels: [50],
     x: 2446,
     y: 3378,
   },
   {
-    name: "Cue Ball",
+    name: "Cue Ball Corey",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 2399,
@@ -1633,9 +1629,8 @@ export const trainers: TrainerData[] = [
   },
 
   // Power Plant
-  // TODO: name
   {
-    name: "Super Nerd",
+    name: "Pokémaniac Mark",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 6354,
@@ -1830,7 +1825,7 @@ export const trainers: TrainerData[] = [
 
   // 2F
   {
-    name: "Burglar Lewis",
+    name: "Burglar Arnie",
     numPokemon: 2,
     pokemonLevels: [51, 51],
     x: 1431,
@@ -1839,14 +1834,14 @@ export const trainers: TrainerData[] = [
 
   // 3F
   {
-    name: "Scientist Ivan",
+    name: "Scientist Brayden",
     numPokemon: 3,
     pokemonLevels: [50, 50, 50],
     x: 2324,
     y: 5801,
   },
   {
-    name: "Burglar Arnie",
+    name: "Burglar Simon",
     numPokemon: 1,
     pokemonLevels: [57],
     x: 2096,
@@ -1855,14 +1850,14 @@ export const trainers: TrainerData[] = [
 
   // 1B
   {
-    name: "Scientist Braydon",
+    name: "Scientist Ivan",
     numPokemon: 2,
     pokemonLevels: [51, 51],
     x: 3132,
     y: 5695,
   },
   {
-    name: "Burglar Simon",
+    name: "Burglar Lewis",
     numPokemon: 2,
     pokemonLevels: [51, 51],
     x: 2892,
