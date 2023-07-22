@@ -47,4 +47,4 @@ git checkout main
 
 ## Found an issue? Want to suggest a feature?
 
-This is very much still a work in progress so there are sure to be bugs/missing data. The best way to file an issue is on [Github](https://github.com/kelseyyoung/FRLGIronmonMap/issues) or contact me on Discord (kelsey#8920)
+This is very much still a work in progress so there are sure to be bugs/missing data. The best way to file an issue is on [Github](https://github.com/kelseyyoung/FRLGIronmonMap/issues) or contact me on Discord (kelsey4)

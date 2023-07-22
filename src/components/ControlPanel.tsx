@@ -325,7 +325,7 @@ export const ControlPanel = () => {
           >
             Github
           </a>{" "}
-          or contact me on Discord (kelsey#8920)
+          or contact me on Discord (kelsey4)
         </div>
       </Dialog>
     </>
