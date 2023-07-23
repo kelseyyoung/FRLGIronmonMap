@@ -481,7 +481,7 @@ export const trainers: TrainerData[] = [
   // S.S. Anne
   // Main Floor
   {
-    name: "Gentleman Arthur",
+    name: "Gentleman Thomas",
     numPokemon: 2,
     pokemonLevels: [27, 27],
     x: 5376,
@@ -651,7 +651,7 @@ export const trainers: TrainerData[] = [
     y: 908,
   },
   {
-    name: "Hiker Alan",
+    name: "Hiker Brice",
     numPokemon: 3,
     pokemonLevels: [30, 30, 30],
     x: 5809,
@@ -673,7 +673,7 @@ export const trainers: TrainerData[] = [
     y: 891,
   },
   {
-    name: "Hiker Brice",
+    name: "Hiker Alan",
     numPokemon: 2,
     pokemonLevels: [32, 32],
     x: 5971,
@@ -1031,14 +1031,14 @@ export const trainers: TrainerData[] = [
 
   // 3F
   {
-    name: "Channeler Patricia",
+    name: "Channeler Carly",
     numPokemon: 1,
     pokemonLevels: [36],
     x: 6664,
     y: 2563,
   },
   {
-    name: "Channeler Carly",
+    name: "Channeler Patricia",
     numPokemon: 1,
     pokemonLevels: [33],
     x: 6679,
@@ -1078,7 +1078,7 @@ export const trainers: TrainerData[] = [
 
   // 5F
   {
-    name: "Channeler Janae",
+    name: "Channeler Tammy",
     numPokemon: 1,
     pokemonLevels: [35],
     x: 6822,
@@ -1092,7 +1092,7 @@ export const trainers: TrainerData[] = [
     y: 2036,
   },
   {
-    name: "Channeler Tammy",
+    name: "Channeler Janae",
     numPokemon: 1,
     pokemonLevels: [33],
     x: 6694,
