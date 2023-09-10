@@ -212,7 +212,7 @@ export const trainers: TrainerData[] = [
 
   // Rt 4/Post Mt Moon
   {
-    name: "Lass",
+    name: "Lass Crissy",
     numPokemon: 3,
     pokemonLevels: [47, 47, 47],
     x: 3699,
@@ -1701,7 +1701,7 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
   {
-    name: "Swimmer Connie",
+    name: "Swimmer Anya",
     numPokemon: 5,
     pokemonLevels: [41, 41, 41, 41, 41],
     x: 3409,
@@ -1709,7 +1709,7 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
   {
-    name: "Swimmer Alice",
+    name: "Swimmer Connie",
     numPokemon: 3,
     pokemonLevels: [44, 44, 44],
     x: 3457,
@@ -1717,7 +1717,7 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
   {
-    name: "Swimmer Anya",
+    name: "Swimmer Alice",
     numPokemon: 2,
     pokemonLevels: [45, 45],
     x: 3489,
@@ -1916,14 +1916,14 @@ export const trainers: TrainerData[] = [
     // TODO: double
   },
   {
-    name: "Fisherman Wade",
+    name: "Fisherman Ronald",
     numPokemon: 4,
     pokemonLevels: [42, 42, 42, 42],
     x: 1071,
     y: 4908,
   },
   {
-    name: "Fisherman Ronald",
+    name: "Fisherman Wade",
     numPokemon: 6,
     pokemonLevels: [41],
     x: 1216,
@@ -1948,7 +1948,7 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
   {
-    name: "Scientist",
+    name: "Scientist Jerry",
     numPokemon: 3,
     pokemonLevels: [42, 42, 42],
     x: 3479,
@@ -1956,7 +1956,7 @@ export const trainers: TrainerData[] = [
     spinner: true,
   },
   {
-    name: "Scientist",
+    name: "Scientist Connor",
     numPokemon: 4,
     pokemonLevels: [39, 39, 39, 39],
     x: 3110,
@@ -1973,7 +1973,7 @@ export const trainers: TrainerData[] = [
     y: 4530,
   },
   {
-    name: "Scientist",
+    name: "Scientist Jose",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 3702,
@@ -1998,7 +1998,7 @@ export const trainers: TrainerData[] = [
     y: 4319,
   },
   {
-    name: "Scientist",
+    name: "Scientist Rodney",
     numPokemon: 1,
     pokemonLevels: [50],
     x: 3253,
@@ -2015,7 +2015,7 @@ export const trainers: TrainerData[] = [
     y: 4129,
   },
   {
-    name: "Scientist",
+    name: "Scientist Beau",
     numPokemon: 4,
     pokemonLevels: [39, 39, 39, 39],
     x: 3814,
@@ -2023,7 +2023,7 @@ export const trainers: TrainerData[] = [
     walker: true,
   },
   {
-    name: "Juggler",
+    name: "Juggler Dalton",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 4005,
@@ -2055,7 +2055,7 @@ export const trainers: TrainerData[] = [
     y: 3974,
   },
   {
-    name: "Scientist",
+    name: "Scientist Taylor",
     numPokemon: 5,
     pokemonLevels: [38, 38, 38, 38, 38],
     x: 3255,
@@ -2085,7 +2085,7 @@ export const trainers: TrainerData[] = [
     y: 3943,
   },
   {
-    name: "Scientist",
+    name: "Scientist Joshua",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 3671,
@@ -2116,7 +2116,7 @@ export const trainers: TrainerData[] = [
     y: 3655,
   },
   {
-    name: "Scientist",
+    name: "Scientist Parker",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 3783,
@@ -2139,7 +2139,7 @@ export const trainers: TrainerData[] = [
     y: 3155,
   },
   {
-    name: "Scientist",
+    name: "Scientist Ed",
     numPokemon: 3,
     pokemonLevels: [42, 42, 42],
     x: 4054,
@@ -2149,7 +2149,7 @@ export const trainers: TrainerData[] = [
 
   // 10F
   {
-    name: "Scientist",
+    name: "Scientist Travis",
     numPokemon: 2,
     pokemonLevels: [44, 44],
     x: 3894,
