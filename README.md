@@ -8,6 +8,8 @@ This is an interactive map of Pokemon FireRed/LeafGreen meant for Ironmon challe
 
 [Emerald](https://kelseyyoung.github.io/EmeraldIronmonMap)
 
+[HGSS](https://kelseyyoung.github.io/HGSSIronmonMap/)
+
 ## Using the map
 
 Trainer information is available on hover, showing the number of pokemon they have, the levels of their pokemon, and any movement information. Trainers can be "marked" by clicking on them
