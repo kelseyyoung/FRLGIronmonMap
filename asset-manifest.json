@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/FRLGIronmonMap/static/css/main.0fadf716.css",
-    "main.js": "/FRLGIronmonMap/static/js/main.6c64ed18.js",
-    "static/media/FullKanto.png": "/FRLGIronmonMap/static/media/FullKanto.4bbab736023cea0b09b0.png",
+    "main.js": "/FRLGIronmonMap/static/js/main.3c12c0fb.js",
+    "static/media/FullKanto.png": "/FRLGIronmonMap/static/media/FullKanto.d80141482f65949b95a0.png",
     "static/media/MapPortalsDemo.gif": "/FRLGIronmonMap/static/media/MapPortalsDemo.dd8aa90ec2c2f21f9679.gif",
     "static/media/PortalClickDemo.gif": "/FRLGIronmonMap/static/media/PortalClickDemo.a893001de870427cc2bf.gif",
     "static/media/FullKantoPaths.png": "/FRLGIronmonMap/static/media/FullKantoPaths.36c48172fcc47bdccdc5.png",
@@ -13,10 +13,10 @@
     "static/media/checkmark.png": "/FRLGIronmonMap/static/media/checkmark.d3a535b4929ab14365bf.png",
     "index.html": "/FRLGIronmonMap/index.html",
     "main.0fadf716.css.map": "/FRLGIronmonMap/static/css/main.0fadf716.css.map",
-    "main.6c64ed18.js.map": "/FRLGIronmonMap/static/js/main.6c64ed18.js.map"
+    "main.3c12c0fb.js.map": "/FRLGIronmonMap/static/js/main.3c12c0fb.js.map"
   },
   "entrypoints": [
     "static/css/main.0fadf716.css",
-    "static/js/main.6c64ed18.js"
+    "static/js/main.3c12c0fb.js"
   ]
 }
