@@ -497,7 +497,7 @@ export const items: ItemData[] = [
   },
   {
     x: 3822,
-    y: 1849,
+    y: 1840,
     type: ItemType.Hidden,
     spawnInfo: "10% chance to spawn",
   },
