@@ -107,10 +107,19 @@ export const ControlPanel = () => {
         <ControlPanelAccordion disableGutters>
           <AccordionSummary
             expandIcon={<Icon fontSize="small">{"expand_more"}</Icon>}
+            sx={{
+              minHeight: 36,
+              padding: "0 8px",
+              fontWeight: "bold",
+              fontSize: 18,
+              "& .MuiAccordionSummary-content": {
+                margin: "8px 0",
+              },
+            }}
           >
             Control Panel
           </AccordionSummary>
-          <AccordionDetails sx={{ paddingBottom: "8px" }}>
+          <AccordionDetails sx={{ padding: "8px" }}>
             <ControlPanelSubtitle>Trainer/Item Info</ControlPanelSubtitle>
             <FormGroup sx={{ paddingBottom: "4px" }}>
               <FormControlLabel
