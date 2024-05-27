@@ -1,4 +1,4 @@
-import { TrainerData } from "../IronmonMapUtils";
+import { TooltipPosition, TrainerData } from "../IronmonMapUtils";
 
 export const defaultTrainerHeight = 22;
 export const defaultTrainerWidth = 18;
@@ -55,6 +55,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [71, 68, 68, 71, 68, 80],
     x: 456,
     y: 3115,
+    tooltipPosition: TooltipPosition.Bottom,
   },
 
   // Route 03/Pre Mt. Moon
@@ -375,6 +376,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [24, 24],
     x: 4625,
     y: 2892,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Bug Catcher Elijah",
@@ -396,6 +398,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [24, 24],
     x: 4625,
     y: 3086,
+    tooltipPosition: TooltipPosition.Bottom,
   },
 
   // Rt 11
@@ -526,6 +529,7 @@ export const trainers: TrainerData[] = [
     x: 5687,
     y: 4138,
     spinner: true,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Sailor Dylan",
@@ -549,6 +553,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [30],
     x: 5510,
     y: 4083,
+    tooltipPosition: TooltipPosition.Left,
   },
   {
     name: "Fisherman Barny",
@@ -582,6 +587,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [26, 26, 26],
     x: 5174,
     y: 3766,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Gentleman Brooks",
@@ -875,6 +881,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [39],
     x: 5451,
     y: 2141,
+    tooltipPosition: TooltipPosition.Left,
   },
   {
     name: "Lass Andrea",
@@ -882,6 +889,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [36, 36, 36],
     x: 5451,
     y: 2161,
+    tooltipPosition: TooltipPosition.Right,
   },
   {
     name: "Lass Megan",
@@ -889,6 +897,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [29, 29, 29, 29, 29],
     x: 5451,
     y: 2177,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Biker Jaren",
@@ -1010,6 +1019,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [35, 35, 35],
     x: 3334,
     y: 3254,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Giovanni",
@@ -1250,6 +1260,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [41, 41, 41],
     x: 6068,
     y: 4426,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Beauty Sheila",
@@ -1354,6 +1365,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [44, 44],
     x: 5104,
     y: 4904,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Biker Malik",
@@ -1361,6 +1373,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [44, 44],
     x: 5104,
     y: 4857,
+    tooltipPosition: TooltipPosition.Left,
   },
   {
     name: "Biker Isaac",
@@ -1410,6 +1423,7 @@ export const trainers: TrainerData[] = [
     x: 4847,
     y: 5160,
     spinner: true,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Biker Alex",
@@ -1425,6 +1439,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [44, 44],
     x: 4705,
     y: 5150,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Beauty Olivia",
@@ -1506,6 +1521,7 @@ export const trainers: TrainerData[] = [
     x: 2208,
     y: 2302,
     spinner: true,
+    tooltipPosition: TooltipPosition.Left,
   },
   {
     name: "Biker Ruben",
@@ -1514,6 +1530,7 @@ export const trainers: TrainerData[] = [
     x: 2240,
     y: 2273,
     spinner: true,
+    tooltipPosition: TooltipPosition.Left,
   },
   {
     name: "Biker Hideo",
@@ -1522,6 +1539,7 @@ export const trainers: TrainerData[] = [
     x: 2269,
     y: 2302,
     spinner: true,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Cue Ball Luke",
@@ -1538,6 +1556,7 @@ export const trainers: TrainerData[] = [
     x: 2334,
     y: 2302,
     spinner: true,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Biker Lao",
@@ -1546,6 +1565,7 @@ export const trainers: TrainerData[] = [
     x: 2364,
     y: 2273,
     spinner: true,
+    tooltipPosition: TooltipPosition.Right,
   },
 
   // Lower part of Cycling Road
@@ -1707,6 +1727,7 @@ export const trainers: TrainerData[] = [
     x: 3409,
     y: 6210,
     spinner: true,
+    tooltipPosition: TooltipPosition.Left,
   },
   {
     name: "Swimmer Connie",
@@ -1715,6 +1736,7 @@ export const trainers: TrainerData[] = [
     x: 3457,
     y: 6226,
     spinner: true,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Swimmer Alice",
@@ -1723,6 +1745,7 @@ export const trainers: TrainerData[] = [
     x: 3489,
     y: 6209,
     spinner: true,
+    tooltipPosition: TooltipPosition.Right,
   },
   {
     name: "Swimmer Barry",
@@ -2271,6 +2294,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [62, 63, 63, 63, 65],
     x: 956,
     y: 821,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Cool Couple Ray & Tyra",
