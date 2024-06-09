@@ -35,6 +35,7 @@ You can highlight all map portals via the Control Panel with various display opt
 
 - First time initialization: `git submodule update --init --recursive`
 - Futher updates: `git pull --recurse-submodules`
+  - If this doesn't work, go to `src/IronmonMapUtils` and run `git pull origin main`
 - If needing to make & push changes:
 
 ```
@@ -44,7 +45,7 @@ git checkout main
 
 - See the README in the [IronmonMapUtils repo](https://github.com/kelseyyoung/IronmonMapUtils) for more info
 
-3. Enable Git LFS git lfs install
+3. Enable Git LFS with `git lfs install`
 
 - This is for the .xcf files which is the source for the maps
 
