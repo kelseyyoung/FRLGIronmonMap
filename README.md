@@ -45,9 +45,10 @@ git checkout main
 
 - See the README in the [IronmonMapUtils repo](https://github.com/kelseyyoung/IronmonMapUtils) for more info
 
-3. Enable Git LFS with `git lfs install`
+3. [Install](https://git-lfs.com/) & enable Git LFS with `git lfs install`
 
-- This is for the .xcf files which is the source for the maps
+- This is for the .xcf files which are the source for the maps
+- To init on an already cloned repo run `git lfs fetch`
 
 4. Run `yarn` to install dependencies
 5. Run `yarn start` to start a local dev server
