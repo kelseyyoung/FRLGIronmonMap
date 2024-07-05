@@ -146,16 +146,16 @@ export const portalGroups: MapPortalGroup[] = [
           y: 1774,
         },
         portal2: {
-          x: 5015,
-          y: 1101,
+          x: 5006,
+          y: 2336,
         },
       },
 
       // Vertical Underground Exit
       {
         portal1: {
-          x: 4967,
-          y: 2006,
+          x: 4960,
+          y: 3249,
         },
         portal2: {
           x: 4719,
@@ -1039,6 +1039,319 @@ export const portalGroups: MapPortalGroup[] = [
         portal2: {
           x: 287,
           y: 928,
+        },
+      },
+    ],
+  },
+  // Pewter Gym
+  {
+    color: "#c3c7c9",
+    area: "Pewter Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 1008,
+          y: 1216,
+        },
+        portal2: {
+          x: 752,
+          y: 1336,
+        },
+      },
+    ],
+  },
+  // Cerulean Gym
+  {
+    color: "#1ed4c8",
+    area: "Cerulean Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 4719,
+          y: 974,
+        },
+        portal2: {
+          x: 4987,
+          y: 781,
+        },
+      },
+    ],
+  },
+  // Vermillion Gym
+  {
+    color: "#e3b510",
+    area: "Vermillion Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 4449,
+          y: 3600,
+        },
+        portal2: {
+          x: 4427,
+          y: 3977,
+        },
+      },
+    ],
+  },
+  // Celadon Gym
+  {
+    color: "#08781d",
+    area: "Celadon Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 3055,
+          y: 2400,
+        },
+        portal2: {
+          x: 2828,
+          y: 2556,
+        },
+      },
+    ],
+  },
+  // Fuschia Gym
+  {
+    color: "#a40ac7",
+    area: "Fuschia Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 3214,
+          y: 5311,
+        },
+        portal2: {
+          x: 2999,
+          y: 5475,
+        },
+      },
+    ],
+  },
+  // Cinnabar Gym
+  {
+    color: "#f21124",
+    area: "Cinnabar Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 1279,
+          y: 6142,
+        },
+        portal2: {
+          x: 883,
+          y: 6334,
+        },
+      },
+    ],
+  },
+  // Saffron Gym
+  {
+    color: "#5721c2",
+    area: "Saffron Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 4799,
+          y: 1999,
+        },
+        portal2: {
+          x: 5004,
+          y: 1888,
+        },
+      },
+      // Portals
+      {
+        portal1: {
+          x: 5068,
+          y: 1843,
+        },
+        portal2: {
+          x: 5228,
+          y: 1892,
+        },
+      },
+      {
+        portal1: {
+          x: 5227,
+          y: 1842,
+        },
+        portal2: {
+          x: 5228,
+          y: 1716,
+        },
+      },
+      {
+        portal1: {
+          x: 5101,
+          y: 1845,
+        },
+        portal2: {
+          x: 5228,
+          y: 1587,
+        },
+      },
+      {
+        portal1: {
+          x: 5101,
+          y: 1892,
+        },
+        portal2: {
+          x: 4906,
+          y: 1842,
+        },
+      },
+      {
+        portal1: {
+          x: 5226,
+          y: 1763,
+        },
+        portal2: {
+          x: 4779,
+          y: 1716,
+        },
+      },
+      {
+        portal1: {
+          x: 5098,
+          y: 1763,
+        },
+        portal2: {
+          x: 4969,
+          y: 1587,
+        },
+      },
+      {
+        portal1: {
+          x: 5098,
+          y: 1716,
+        },
+        portal2: {
+          x: 5098,
+          y: 1587,
+        },
+      },
+      {
+        portal1: {
+          x: 5227,
+          y: 1636,
+        },
+        portal2: {
+          x: 4779,
+          y: 1845,
+        },
+      },
+      {
+        portal1: {
+          x: 5098,
+          y: 1636,
+        },
+        portal2: {
+          x: 4778,
+          y: 1588,
+        },
+      },
+      {
+        portal1: {
+          x: 5035,
+          y: 1636,
+        },
+        portal2: {
+          x: 4783,
+          y: 1892,
+        },
+      },
+      {
+        portal1: {
+          x: 5035,
+          y: 1590,
+        },
+        portal2: {
+          x: 4907,
+          y: 1589,
+        },
+      },
+      {
+        portal1: {
+          x: 4972,
+          y: 1636,
+        },
+        portal2: {
+          x: 4907,
+          y: 1715,
+        },
+      },
+      {
+        portal1: {
+          x: 4779,
+          y: 1764,
+        },
+        portal2: {
+          x: 4907,
+          y: 1637,
+        },
+      },
+      {
+        portal1: {
+          x: 4907,
+          y: 1764,
+        },
+        portal2: {
+          x: 4907,
+          y: 1892,
+        },
+      },
+      {
+        portal1: {
+          x: 5067,
+          y: 1764,
+        },
+        portal2: {
+          x: 4779,
+          y: 1637,
+        },
+      },
+    ],
+  },
+  // Fighting Dojo
+  {
+    color: "#0a0a0a",
+    area: "Fighting Dojo",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 4702,
+          y: 1995,
+        },
+        portal2: {
+          x: 5033,
+          y: 2148,
+        },
+      },
+    ],
+  },
+  // Viridian Gym
+  {
+    color: "#50de71",
+    area: "Viridian Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 1344,
+          y: 3038,
+        },
+        portal2: {
+          x: 1718,
+          y: 3098,
         },
       },
     ],
