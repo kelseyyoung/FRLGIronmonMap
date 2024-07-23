@@ -2400,7 +2400,7 @@ export const trainers: TrainerData[] = [
   },
   {
     name: "Lass Lisa",
-    numPokemon: 5,
+    numPokemon: 2,
     pokemonLevels: [35, 35],
     x: 2845,
     y: 2389,
