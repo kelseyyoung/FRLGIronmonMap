@@ -908,8 +908,8 @@ export const items: ItemData[] = [
     type: ItemType.Normal,
   },
   {
-    x: 5839,
-    y: 5760,
+    x: 4624,
+    y: 5839,
     type: ItemType.Normal,
   },
 
