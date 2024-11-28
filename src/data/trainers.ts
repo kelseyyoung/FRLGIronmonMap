@@ -910,7 +910,7 @@ export const trainers: TrainerData[] = [
   {
     name: "Biker Ricardo",
     numPokemon: 3,
-    pokemonLevels: [33, 33, 33],
+    pokemonLevels: [33, 33, 35],
     x: 5276,
     y: 2326,
     walker: true,
