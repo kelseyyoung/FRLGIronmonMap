@@ -24,9 +24,11 @@ import {
   CheckboxProps,
   RadioProps,
   IconButton,
-  IconButtonProps,
   AccordionProps,
   DialogContent,
+  Tooltip,
+  TooltipProps,
+  tooltipClasses,
 } from "@mui/material";
 import {
   MapPortalLinesType,
@@ -39,6 +41,9 @@ import { styled } from "@mui/material/styles";
 const ControlPanelSubtitle = styled(FormLabel)<FormLabelProps>(({ theme }) => ({
   fontWeight: "bold",
   color: theme.palette.text.primary,
+  display: "flex",
+  alignItems: "center",
+  gap: 4,
 }));
 
 const ControlPanelCheckbox = styled(Checkbox)<CheckboxProps>(() => ({
@@ -49,18 +54,34 @@ const ControlPanelRadio = styled(Radio)<RadioProps>(() => ({
   padding: "4px 9px",
 }));
 
-const ControlPanelIconButton = styled(IconButton)<IconButtonProps>(
-  ({ theme }) => ({
-    color: theme.palette.text.primary,
-  })
-);
-
 const ControlPanelAccordion = styled(Accordion)<AccordionProps>(() => ({
   backgroundColor: "rgba(255, 255, 255, 0.8)",
   "&:hover": {
     backgroundColor: "rgba(255, 255, 255, 0.9)",
   },
 }));
+
+const InfoTooltip = styled(({ className, ...props }: TooltipProps) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))({
+  [`& .${tooltipClasses.tooltip}`]: {
+    maxWidth: 200,
+    fontSize: 14,
+  },
+});
+
+const iconButtonComponentsProps = {
+  popper: {
+    modifiers: [
+      {
+        name: "offset",
+        options: {
+          offset: [0, -10],
+        },
+      },
+    ],
+  },
+};
 
 export const ControlPanel = () => {
   const {
@@ -73,6 +94,7 @@ export const ControlPanel = () => {
     showMapPortalLines,
     showMapPortalLinesType,
     showRoutes,
+    useSaveData,
   } = useAppSelector((state) => state.settings);
   const {
     setShowTrainerData,
@@ -84,6 +106,8 @@ export const ControlPanel = () => {
     setShowMapPortalLines,
     setShowMapPortalLinesType,
     setShowRoutes,
+    setUseSaveData,
+    triggerForceClearMarks,
   } = mapSettingsSlice.actions;
   const dispatch = useAppDispatch();
 
@@ -279,20 +303,79 @@ export const ControlPanel = () => {
                 label="Show Routes"
               />
             </FormGroup>
+            <ControlPanelSubtitle>
+              Data Storage{" "}
+              <InfoTooltip
+                title={
+                  <>
+                    {
+                      "Enabling this setting will preserve marks (check, star, etc) on items and trainers across browser sessions. Uses browser local storage"
+                    }
+                  </>
+                }
+                arrow
+                placement="right"
+              >
+                <Icon color="info" fontSize="small">
+                  help
+                </Icon>
+              </InfoTooltip>
+            </ControlPanelSubtitle>
+            <FormGroup>
+              <FormControlLabel
+                control={
+                  <ControlPanelCheckbox
+                    checked={useSaveData}
+                    onChange={() => dispatch(setUseSaveData(!useSaveData))}
+                    size="small"
+                  />
+                }
+                label="Save Marks to Browser"
+              />
+            </FormGroup>
             <hr />
             <div className="buttons-container">
-              <ControlPanelIconButton
-                size="small"
-                onClick={() => setInfoDialogOpen(true)}
+              <Tooltip
+                title="About"
+                arrow
+                componentsProps={iconButtonComponentsProps}
               >
-                <Icon fontSize="small">info</Icon>
-              </ControlPanelIconButton>
-              <ControlPanelIconButton
-                size="small"
-                onClick={() => setHelpDialogOpen(true)}
+                <IconButton
+                  size="small"
+                  color="inherit"
+                  onClick={() => setInfoDialogOpen(true)}
+                >
+                  <Icon fontSize="small">info</Icon>
+                </IconButton>
+              </Tooltip>
+              <Tooltip
+                title="Help"
+                arrow
+                componentsProps={iconButtonComponentsProps}
               >
-                <Icon fontSize="small">help</Icon>
-              </ControlPanelIconButton>
+                <IconButton
+                  size="small"
+                  color="inherit"
+                  onClick={() => setHelpDialogOpen(true)}
+                >
+                  <Icon fontSize="small">help</Icon>
+                </IconButton>
+              </Tooltip>
+              <Tooltip
+                title="Reset Marks"
+                arrow
+                componentsProps={iconButtonComponentsProps}
+              >
+                <IconButton
+                  size="small"
+                  color="inherit"
+                  onClick={() => {
+                    dispatch(triggerForceClearMarks());
+                  }}
+                >
+                  <Icon fontSize="small">replay</Icon>
+                </IconButton>
+              </Tooltip>
             </div>
           </AccordionDetails>
         </ControlPanelAccordion>
