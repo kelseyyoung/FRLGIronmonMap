@@ -28,6 +28,10 @@
   justify-content: center;
 }
 
+.dialog-text {
+  margin: 8px 0;
+}
+
 .dialog-text .demo-gif {
   text-align: center;
   margin: 10px 0;

@@ -31,7 +31,7 @@ export interface MapInteractionCSSValue {
 export const FRLGIronmonMap = () => {
   const [mapData, setMapData] = React.useState<MapInteractionCSSValue>({
     scale: 1,
-    translation: { x: 0, y: 0 },
+    translation: { x: -2500, y: -2000 },
   });
 
   const showRoutes = useAppSelector((state) => state.settings).showRoutes;
