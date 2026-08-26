@@ -11,6 +11,9 @@
 # production
 /build
 
+# generated map tiles (built from src/assets by scripts/generateTiles.js)
+/public/tiles
+
 # misc
 .DS_Store
 .env.local

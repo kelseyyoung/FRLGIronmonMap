@@ -27,10 +27,16 @@
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
+    "prestart": "yarn generate:tiles",
     "start": "react-scripts start",
+    "prebuild": "yarn generate:tiles",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate:tiles": "node scripts/generateTiles.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
   },
   "eslintConfig": {
     "extends": [

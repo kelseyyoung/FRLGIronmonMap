@@ -3,6 +3,11 @@
   width: 100%;
 }
 
+.map-viewport {
+  height: 100%;
+  width: 100%;
+}
+
 .react-portal-container {
   position: absolute;
   top: 0;
@@ -18,10 +23,6 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.full-map-img.pixelated {
-  image-rendering: pixelated;
 }
 
 .routes-visible {
